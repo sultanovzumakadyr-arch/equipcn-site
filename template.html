@@ -176,6 +176,11 @@ dialog#pd>.x{position:sticky;float:right;top:14px;margin:14px 14px -54px 0;width
 .desc p{color:var(--text);margin-bottom:10px;max-width:70ch;line-height:1.6}
 .specs{width:100%;border-collapse:collapse;font-size:.95rem}.specs td{padding:9px 10px;border-bottom:1px solid var(--edge)}.specs td:first-child{color:var(--muted);width:45%}
 @media(max-width:560px){.fact{padding:18px 16px}.fact b{font-size:1.45rem}.fact span{font-size:.85rem}}
+.chip{font:inherit;color:inherit;cursor:pointer;transition:opacity .45s,transform .45s}.chip:hover{border-color:var(--accent)}
+.chip.fade{opacity:0;transform:translateY(6px)}
+.orbit .chip{top:auto;bottom:auto;left:auto;right:auto}
+.orbit .c1{top:2%;left:-4%}.orbit .c2{top:12%;right:-10%}.orbit .c3{top:47%;right:-16%}.orbit .c4{bottom:4%;right:-4%}.orbit .c5{bottom:16%;left:-14%}.orbit .c6{top:38%;left:-18%}
+@media(max-width:900px){.orbit .chip{font-size:.8rem;padding:7px 11px}.orbit .c3,.orbit .c6{display:none}.orbit .c1{top:0;left:0}.orbit .c2{top:14%;right:0}.orbit .c4{bottom:2%;right:0}.orbit .c5{bottom:16%;left:0}}
 </style></head><body>
 <header><div class="wrap">
   <a class="logo" href="#top"><svg class="" width="38" height="38" viewBox="0 0 48 48" aria-hidden="true"><g fill="var(--logo)" transform="rotate(22.5 24 24)"><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(0 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(45 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(90 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(135 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(180 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(225 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(270 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(315 24 24)"/><circle cx="24" cy="24" r="16.5"/></g><circle cx="24" cy="24" r="9.6" fill="#fff"/><path d="M19.6 24.6l3.4 3.4 6.6-7.6" fill="none" stroke="var(--logo)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><b>equipcn</b></a>
@@ -195,10 +200,7 @@ dialog#pd>.x{position:sticky;float:right;top:14px;margin:14px 14px -54px 0;width
     <div class="core"><svg viewBox="0 0 48 48"><defs><linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5a9cf3"/><stop offset="1" stop-color="#1F5FC9"/></linearGradient></defs>
       <g class="teeth"><g fill="url(#gg)" transform="rotate(22.5 24 24)"><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(0 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(45 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(90 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(135 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(180 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(225 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(270 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(315 24 24)"/><circle cx="24" cy="24" r="16.5"/></g></g>
       <circle cx="24" cy="24" r="9.6" fill="#fff"/><path d="M19.6 24.6l3.4 3.4 6.6-7.6" fill="none" stroke="#1F5FC9" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-    <span class="chip c1"><i></i>Металлообработка <small data-cnt="metal" data-fmt="num">41</small></span>
-    <span class="chip c2"><i></i>Сельское хозяйство <small data-cnt="agro" data-fmt="num">28</small></span>
-    <span class="chip c3"><i></i>Стройматериалы <small data-cnt="build" data-fmt="num">27</small></span>
-    <span class="chip c4"><i></i>Деревообработка <small data-cnt="wood" data-fmt="num">25</small></span>
+    <button type="button" class="chip c1"><i></i><span class="cn"></span> <small></small></button><button type="button" class="chip c2"><i></i><span class="cn"></span> <small></small></button><button type="button" class="chip c3"><i></i><span class="cn"></span> <small></small></button><button type="button" class="chip c4"><i></i><span class="cn"></span> <small></small></button><button type="button" class="chip c5"><i></i><span class="cn"></span> <small></small></button><button type="button" class="chip c6"><i></i><span class="cn"></span> <small></small></button>
   </div>
 </div></div>
 <div class="wrap"><div class="facts">
@@ -336,5 +338,15 @@ const card=p=>`<button type="button" class="prod" data-id="${p.id}"><div class="
  dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close();});
 })();
 setupForm();
+
+(function(){const SHORT={metal:'Металлообработка',wood:'Деревообработка',build:'Стройматериалы',agro:'Сельское хозяйство',food:'Пищевое производство',plast:'Пластик и переработка',power:'Компрессоры и энергетика',pack:'Упаковка и печать',fish:'Рыбоводство',glass:'Стекло и окна',auto:'Автосервис',mine:'Горнодобыча',air:'Климат',elec:'Электроника',other:'Другое'};
+ const gs=GROUPS.map(g=>g[0]).filter(k=>COUNTS[k]);const chips=[...document.querySelectorAll('.orbit .chip')];let i=0;
+ function fill(){chips.forEach((c,j)=>{const k=gs[(i+j)%gs.length];c.dataset.k=k;c.querySelector('.cn').textContent=SHORT[k]||gname(k);c.querySelector('small').textContent=COUNTS[k];c.setAttribute('aria-label','Открыть: '+gname(k));});}
+ fill();chips.forEach(c=>c.addEventListener('click',()=>openGroup(c.dataset.k)));
+ const orbit=document.querySelector('.orbit');orbit.removeAttribute('aria-hidden');
+ if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ let paused=false;orbit.addEventListener('mouseenter',()=>paused=true);orbit.addEventListener('mouseleave',()=>paused=false);
+ setInterval(()=>{if(paused||document.hidden)return;chips.forEach(c=>c.classList.add('fade'));setTimeout(()=>{i=(i+chips.length)%gs.length;fill();chips.forEach(c=>c.classList.remove('fade'));},450);},3200);
+})();
 document.querySelectorAll('[data-cnt]').forEach(el=>{const k=el.dataset.cnt,n=k==='all'?PRODUCTS.length:(COUNTS[k]||0);el.textContent=el.dataset.fmt==='pos'?n+' '+plural(n):n;});
 </script></body></html>
