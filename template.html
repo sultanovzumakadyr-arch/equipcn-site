@@ -181,6 +181,34 @@ dialog#pd>.x{position:sticky;float:right;top:14px;margin:14px 14px -54px 0;width
 .orbit .chip{top:auto;bottom:auto;left:auto;right:auto}
 .orbit .c1{top:2%;left:-4%}.orbit .c2{top:12%;right:-10%}.orbit .c3{top:47%;right:-16%}.orbit .c4{bottom:4%;right:-4%}.orbit .c5{bottom:16%;left:-14%}.orbit .c6{top:38%;left:-18%}
 @media(max-width:900px){.orbit .chip{font-size:.8rem;padding:7px 11px}.orbit .c3,.orbit .c6{display:none}.orbit .c1{top:0;left:0}.orbit .c2{top:14%;right:0}.orbit .c4{bottom:2%;right:0}.orbit .c5{bottom:16%;left:0}}
+
+.prow .more-card{display:none}
+@media(min-width:561px){.prow>.prod:nth-child(n+4){display:none}}
+@media(max-width:560px){
+ section.block{padding:44px 0}
+ .head{margin-bottom:22px}
+ .bento{grid-template-columns:1fr 1fr;grid-auto-rows:auto;gap:10px}
+ .bx,.bx.big,.bx.wide{grid-column:span 1;grid-row:span 1;padding:14px;min-height:0;justify-content:flex-start}
+ .bx .ill,.bx.big .ill{position:static;width:52px;max-width:none;margin-bottom:10px}
+ .bx h3,.bx.big h3{font-size:.92rem;line-height:1.25}
+ .bx .n,.bx.big .n{position:static;order:3;font-size:.75rem;margin-top:4px;font-weight:600;line-height:1.2}
+ .bx.big .n{color:#cfe1fb!important}
+ .gsec{padding:22px 0 6px}
+ .ghead{margin-bottom:12px;gap:10px}.gico{width:44px;height:34px}.ghead h3{font-size:1.1rem}
+ .ghead .all{display:none}
+ .prow{display:grid;grid-auto-flow:column;grid-auto-columns:62%;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;padding-bottom:6px;margin:0 -16px;padding-left:16px;padding-right:16px;scrollbar-width:none}
+ .prow::-webkit-scrollbar{display:none}
+ .prow>*{scroll-snap-align:start}
+ .prow .more-card{display:flex;align-items:center;justify-content:center;margin:0;border-radius:18px;font-size:1rem}
+ .prods{grid-template-columns:1fr 1fr;gap:10px}
+ .prod{padding:8px;border-radius:16px}
+ .prod .grp{display:none}
+ .prod h3{font-size:.85rem;padding:8px 4px 0;line-height:1.3}
+ .prod .row{padding:8px 4px 2px}
+ .prod .price{font-size:.92rem}.prod .ask{width:32px;height:32px;font-size:.9rem}
+ .prod .tag{display:none}
+ .catbar .tools{margin-bottom:8px}
+}
 </style></head><body>
 <header><div class="wrap">
   <a class="logo" href="#top"><svg class="" width="38" height="38" viewBox="0 0 48 48" aria-hidden="true"><g fill="var(--logo)" transform="rotate(22.5 24 24)"><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(0 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(45 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(90 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(135 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(180 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(225 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(270 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(315 24 24)"/><circle cx="24" cy="24" r="16.5"/></g><circle cx="24" cy="24" r="9.6" fill="#fff"/><path d="M19.6 24.6l3.4 3.4 6.6-7.6" fill="none" stroke="var(--logo)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><b>equipcn</b></a>
@@ -308,7 +336,7 @@ const card=p=>`<button type="button" class="prod" data-id="${p.id}"><div class="
     html='<div class="prods" style="margin-top:24px">'+l.map(card).join('')+'</div>';
   }else if(cat==='all'){
     n=PRODUCTS.length;
-    html=GROUPS.filter(g=>COUNTS[g[0]]).map(([k,v])=>{const l=PRODUCTS.filter(p=>p.cat===k);return `<section class="gsec" id="g-${k}">${head(k,v,true)}<div class="prods">${l.slice(0,3).map(card).join('')}</div></section>`;}).join('');
+    html=GROUPS.filter(g=>COUNTS[g[0]]).map(([k,v])=>{const l=PRODUCTS.filter(p=>p.cat===k);return `<section class="gsec" id="g-${k}">${head(k,v,true)}<div class="prods prow">${l.slice(0,6).map(card).join('')}<button type="button" class="all more-card" data-k="${k}">Все ${COUNTS[k]} →</button></div></section>`;}).join('');
   }else{
     const l=PRODUCTS.filter(p=>p.cat===cat);n=l.length;
     html=`<button type="button" class="back" data-k="all">← Все направления</button><section class="gsec">${head(cat,gname(cat),false)}<div class="prods">${l.map(card).join('')}</div></section>`;
