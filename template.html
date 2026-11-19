@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Equipcn — премиум светлый</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Вариант 3 «Премиум»: глубокий синий на всю страницу, стеклянные карточки, крупный вращающийся логотип-шестерёнка как главный образ */
+:root{--bg:#f5f8fd;--bg2:#eaf1fc;--navy:#0B3D91;--accent:#2F80ED;--light:#1F5FC9;--logo:#1F5FC9;--text:#0f1d33;--muted:#5b6b82;--glass:#ffffff;--edge:#dbe4f1;
+--display:"Manrope",system-ui,sans-serif;--body:"Golos Text",system-ui,-apple-system,"Segoe UI",sans-serif;color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;
+background-image:radial-gradient(900px 600px at 85% -10%,rgba(47,128,237,.18),transparent 60%),radial-gradient(700px 500px at -10% 30%,rgba(11,61,145,.08),transparent 60%);background-repeat:no-repeat}
+a{color:inherit}:focus-visible{outline:2px solid var(--light);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--display);line-height:1.06;text-wrap:balance;letter-spacing:-.03em}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 26px;border-radius:999px;font-weight:600;text-decoration:none;font-size:1rem;border:1px solid transparent;cursor:pointer;font-family:var(--body);transition:transform .2s,background .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-main{background:var(--accent);color:#fff;box-shadow:0 0 0 6px rgba(47,128,237,.15),0 14px 30px -12px rgba(47,128,237,.8)}.btn-main:hover{background:#4a92f2}
+.btn-line{border-color:var(--edge);background:#fff;color:var(--navy)}.btn-line:hover{border-color:var(--accent)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.82rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--light)}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--accent)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:84px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}.logo b{font-family:var(--display);font-weight:800;font-size:1.65rem;letter-spacing:-.04em;color:#111}
+.nav{display:flex;gap:6px;padding:6px;border:1px solid var(--edge);border-radius:999px;background:var(--glass);backdrop-filter:blur(8px)}
+.nav a{text-decoration:none;font-size:.93rem;font-weight:500;padding:8px 16px;border-radius:999px;color:var(--muted)}.nav a:hover{background:var(--bg2);color:var(--navy)}
+@media(max-width:980px){.nav{display:none}}
+/* hero */
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center;padding-top:clamp(30px,6vw,70px);padding-bottom:clamp(40px,6vw,80px)}
+.hero h1{font-size:clamp(2.5rem,6vw,5rem);font-weight:800;margin:22px 0 22px}
+.hero h1 .grad{background:linear-gradient(90deg,var(--navy),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:1.15rem;color:var(--muted);max-width:32em}
+.ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.orbit{position:relative;aspect-ratio:1/1;width:100%;max-width:470px;justify-self:center}
+.orbit .ring{position:absolute;inset:0;border-radius:50%;border:1.5px dashed rgba(31,95,201,.25)}
+.orbit .ring.r2{inset:14%;border-style:solid;border-color:rgba(31,95,201,.12);background:radial-gradient(circle,rgba(47,128,237,.12),transparent 70%)}
+.orbit .core{position:absolute;inset:26%;display:grid;place-items:center;filter:drop-shadow(0 18px 30px rgba(31,95,201,.35))}
+.orbit .core svg{width:100%;height:100%}
+.orbit .core .teeth{transform-origin:24px 24px;animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.chip{position:absolute;padding:9px 14px;border-radius:14px;background:#fff;border:1px solid var(--edge);box-shadow:0 10px 24px -14px rgba(11,61,145,.4);font-size:.88rem;font-weight:600;white-space:nowrap;backdrop-filter:blur(6px);display:flex;gap:8px;align-items:center}
+.chip i{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+.chip small{color:var(--muted);font-weight:500}
+.c1{top:6%;left:-4%}.c2{top:20%;right:-6%}.c3{bottom:18%;left:-8%}.c4{bottom:4%;right:2%}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.orbit{max-width:360px}.c1,.c3{left:0}.c2,.c4{right:0}}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--edge);border-radius:22px;background:var(--glass);overflow:hidden}
+.fact{padding:24px 26px;border-right:1px solid var(--edge)}.fact:last-child{border:0}
+.fact b{display:block;font-family:var(--display);font-size:2.1rem;font-weight:800;letter-spacing:-.03em}.fact span{color:var(--muted);font-size:.93rem}
+@media(max-width:800px){.facts{grid-template-columns:1fr 1fr}.fact{border-bottom:1px solid var(--edge)}}
+section.block{padding:clamp(60px,9vw,120px) 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.head h2{font-size:clamp(2rem,4vw,3.2rem);font-weight:800;max-width:15em;margin-top:14px}.head p{color:var(--muted);max-width:30em}
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px}
+.bx{font:inherit;color:inherit;text-align:left;cursor:pointer;position:relative;border:1px solid var(--edge);background:var(--glass);border-radius:22px;padding:22px;text-decoration:none;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;transition:border-color .25s,background .25s}
+.bx{box-shadow:0 14px 30px -26px rgba(11,61,145,.5)}.bx:hover{border-color:var(--accent);background:#fff;box-shadow:0 20px 40px -24px rgba(47,128,237,.5)}
+.bx .ill{position:absolute;top:18px;right:18px;width:34%;max-width:150px;color:var(--light);opacity:.9}
+.bx .n{position:absolute;top:20px;left:22px;font-family:var(--display);font-weight:800;font-size:.9rem;color:var(--muted)}
+.bx h3{font-size:1.25rem;font-weight:700;letter-spacing:-.01em}.bx p{color:var(--muted);font-size:.92rem;margin-top:4px;max-width:24em}
+.bx.big{grid-column:span 2;grid-row:span 2;background:linear-gradient(150deg,#2F80ED,#0B3D91);color:#fff;border-color:transparent}.bx.big .ill{color:#cfe1fb}.bx.big:hover{background:linear-gradient(150deg,#3a8af2,#0d47a8)}
+.bx.big .ill{width:58%;max-width:none;top:40px}.bx.big h3{font-size:1.9rem}.bx.big .n{font-size:3.4rem;color:#fff!important;top:auto;position:static;line-height:1}
+.bx.wide{grid-column:span 2}
+@media(max-width:900px){.bento{grid-template-columns:1fr 1fr}.bx.big{grid-row:span 2}}
+@media(max-width:560px){.bento{grid-template-columns:1fr}.bx.big,.bx.wide{grid-column:span 1}}
+/* catalog */
+.tools{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+.pills{display:flex;gap:8px;flex-wrap:wrap;width:100%}
+.pill span{opacity:.6;font-size:.82em;margin-left:2px}
+.found{color:var(--muted);font-size:.92rem}
+.more-wrap{display:flex;justify-content:center;margin-top:28px}
+.prod .art{overflow:hidden}.prod .art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.grp{display:block;font-size:.76rem;font-weight:600;color:var(--light);text-transform:uppercase;letter-spacing:.06em;padding:14px 6px 0}
+.pill{border:1px solid var(--edge);background:var(--glass);padding:9px 16px;border-radius:999px;font:inherit;font-size:.92rem;font-weight:500;cursor:pointer;color:var(--muted)}
+.pill:hover{color:var(--navy);border-color:var(--accent)}.pill.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+#q{font:inherit;padding:12px 18px;border:1px solid var(--edge);border-radius:999px;flex:1;max-width:460px;min-width:220px;background:#fff;color:var(--text)}#q::placeholder{color:var(--muted)}#q:focus{outline:none;border-color:var(--accent)}
+.prods{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.prod{box-shadow:0 14px 30px -26px rgba(11,61,145,.5);border:1px solid var(--edge);border-radius:22px;background:var(--glass);padding:14px;display:flex;flex-direction:column;transition:border-color .2s,transform .2s}
+.prod:hover{border-color:var(--accent);transform:translateY(-3px)}
+.prod .art{border-radius:14px;aspect-ratio:16/10;display:grid;place-items:center;color:var(--light);position:relative;background:radial-gradient(circle at 50% 60%,rgba(47,128,237,.3),transparent 70%),var(--bg2);
+background-image:radial-gradient(circle at 50% 60%,rgba(47,128,237,.14),transparent 70%),linear-gradient(rgba(11,61,145,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(11,61,145,.06) 1px,transparent 1px);background-size:auto,22px 22px,22px 22px}
+.prod .art svg{width:52%}
+.prod .sku{position:absolute;top:10px;left:12px;font-size:.74rem;color:var(--muted);letter-spacing:.06em}
+.prod .tag{position:absolute;top:10px;right:10px;font-size:.74rem;font-weight:600;padding:4px 10px;border-radius:999px;background:#fff;color:var(--navy);border:1px solid var(--edge)}
+.prod h3{font-family:var(--body);font-weight:600;font-size:1.05rem;letter-spacing:0;line-height:1.35;padding:6px 6px 0}
+.prod .row{margin-top:auto;padding:16px 6px 4px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.price{font-family:var(--display);font-weight:800;font-size:1.2rem;font-variant-numeric:tabular-nums}.price small{font-family:var(--body);font-weight:500;font-size:.85rem;color:var(--muted)}
+.ask{width:42px;height:42px;flex:none;border-radius:50%;background:var(--accent);display:grid;place-items:center;text-decoration:none;color:#fff;font-size:1.1rem;transition:transform .2s}.ask:hover{transform:rotate(-45deg)}
+#empty{display:none;padding:30px;text-align:center;color:var(--muted);border:1px dashed var(--edge);border-radius:18px}
+@media(max-width:960px){.prods{grid-template-columns:1fr 1fr}}@media(max-width:620px){.prods{grid-template-columns:1fr}}
+
+.catbar{position:sticky;top:0;z-index:15;background:rgba(245,248,253,.94);backdrop-filter:blur(10px);padding:14px 0 12px;margin:0 0 10px;border-bottom:1px solid var(--edge)}
+.catbar .tools{margin-bottom:12px}
+.catbar .pills{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;padding-bottom:4px}
+.catbar .pill{white-space:nowrap}
+.gsec{padding:34px 0 10px;border-bottom:1px solid var(--edge)}
+.gsec:last-child{border-bottom:0}
+.ghead{display:flex;align-items:center;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+.gico{width:64px;height:48px;color:var(--light);flex:none}
+.ghead h3{font-size:clamp(1.3rem,2.4vw,1.8rem);font-weight:800}
+.ghead .cnt{color:var(--muted);font-size:.95rem}
+.ghead .all{margin-left:auto;font:inherit;font-weight:600;color:var(--navy);background:var(--glass);border:1px solid var(--edge);border-radius:999px;padding:10px 18px;cursor:pointer}
+.ghead .all:hover{border-color:var(--accent)}
+.back{font:inherit;color:var(--light);background:none;border:0;cursor:pointer;font-weight:600;padding:0;margin-top:20px}
+.prod{cursor:pointer;text-align:left;font:inherit;color:inherit}
+.prod:focus-visible{outline:2px solid var(--light)}
+dialog#pd{margin:auto;border:1px solid var(--edge);border-radius:24px;background:#fff;color:var(--text);padding:0;max-width:860px;width:calc(100% - 32px)}
+dialog#pd::backdrop{background:rgba(11,30,70,.45);backdrop-filter:blur(4px)}
+.pd{display:grid;grid-template-columns:1fr 1fr}
+.pd .art{position:relative;min-height:320px;display:grid;place-items:center;color:var(--light);background:radial-gradient(circle at 50% 60%,rgba(47,128,237,.15),transparent 70%),var(--bg2)}
+.pd .art svg{width:55%}.pd .art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pd .info{padding:30px;display:flex;flex-direction:column;gap:14px}
+.pd h3{font-size:1.5rem;font-weight:800;line-height:1.2}
+.pd .price{font-size:1.6rem}
+.pd ul{list-style:none;display:grid;gap:8px;color:var(--muted);font-size:.95rem}
+.pd ul li::before{content:"✓ ";color:var(--accent);font-weight:700}
+.pd .x{position:absolute;top:14px;right:14px;width:40px;height:40px;border-radius:50%;border:1px solid var(--edge);background:#fff;color:var(--navy);font-size:1.2rem;cursor:pointer;z-index:2}
+@media(max-width:700px){.pd{grid-template-columns:1fr}.pd .art{min-height:220px}}
+/* why */
+.why{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--edge)}
+.wi{padding:30px 26px 30px 0;border-bottom:1px solid var(--edge)}
+.wi:not(:nth-child(3n+1)){padding-left:26px;border-left:1px solid var(--edge)}
+.wi .num{font-family:var(--display);font-weight:800;font-size:2.6rem;letter-spacing:-.04em;background:linear-gradient(180deg,var(--accent),rgba(47,128,237,.15));-webkit-background-clip:text;background-clip:text;color:transparent}
+.wi b{display:block;font-size:1.15rem;font-weight:600;margin-top:10px}.wi p{color:var(--muted);margin-top:4px}
+@media(max-width:860px){.why{grid-template-columns:1fr 1fr}.wi{padding-left:20px!important;border-left:0!important}}@media(max-width:560px){.why{grid-template-columns:1fr}}
+/* timeline */
+.tl{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px}
+.tl .stick{position:sticky;top:30px;align-self:start}
+.tl .stick h2{font-size:clamp(2rem,4vw,3.2rem);font-weight:800;margin-top:14px}.tl .stick p{color:var(--muted);margin:16px 0 26px}
+.tsteps{position:relative;display:grid;gap:14px}
+.ts{display:grid;grid-template-columns:62px 1fr;gap:18px;align-items:start;border:1px solid var(--edge);background:var(--glass);border-radius:20px;padding:20px}
+.ts .n{color:#fff;width:62px;height:62px;border-radius:16px;background:linear-gradient(150deg,var(--accent),var(--navy));display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:1.4rem}
+.ts b{font-size:1.15rem;font-weight:600;display:block;margin-top:4px}.ts p{color:var(--muted)}
+@media(max-width:860px){.tl{grid-template-columns:1fr}.tl .stick{position:static}}
+/* faq */
+.faq{display:grid;gap:10px}
+.qa{border:1px solid var(--edge);border-radius:18px;background:var(--glass)}
+.qa summary{list-style:none;cursor:pointer;padding:20px 24px;font-weight:600;font-size:1.05rem;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.qa summary::-webkit-details-marker{display:none}
+.qa .pm{flex:none;width:30px;height:30px;border-radius:50%;border:1px solid var(--edge);position:relative}
+.qa .pm::before,.qa .pm::after{content:"";position:absolute;left:8px;right:8px;top:13.5px;height:2px;background:var(--accent);transition:transform .2s}
+.qa .pm::after{transform:rotate(90deg)}.qa[open] .pm::after{transform:rotate(0)}
+.qa p{padding:0 24px 22px;color:var(--muted);max-width:60em}
+/* contact */
+.contact{color:#fff;--edge:rgba(255,255,255,.14);--muted:#b8c9e6;--light:#9cc3fa;border-radius:30px;padding:clamp(26px,5vw,60px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(26px,5vw,60px);background:linear-gradient(140deg,var(--navy),#0d2c66 60%,#123a80);border:1px solid var(--edge);position:relative;overflow:hidden}
+.contact h2{font-size:clamp(2rem,4vw,3rem);font-weight:800;margin-top:14px}.contact .sub{color:#c3d4f1;margin-top:14px}
+.cl{margin-top:28px;display:grid;gap:12px}.cl div{display:flex;gap:12px;padding-bottom:12px;border-bottom:1px solid var(--edge)}
+.cl span{color:var(--light);min-width:96px;font-size:.92rem}.cl a{text-decoration:none;font-weight:600}
+form{color:#fff;background:rgba(6,26,63,.35);border:1px solid var(--edge);border-radius:22px;padding:clamp(20px,3vw,30px);display:grid;gap:14px;backdrop-filter:blur(6px)}
+label{font-weight:600;font-size:.9rem;display:grid;gap:6px}
+input,select,textarea{font:inherit;font-weight:400;padding:13px 15px;border-radius:12px;border:1px solid var(--edge);background:rgba(255,255,255,.06);color:#fff}
+input::placeholder,textarea::placeholder{color:#8196bb}select option{background:#0B3D91}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--light)}textarea{min-height:90px;resize:vertical}
+.form-note{font-size:.84rem;color:var(--muted)}
+#formOut{display:none;background:rgba(47,128,237,.2);border-radius:12px;padding:12px 14px;font-size:.95rem}#formOut a{color:#fff;font-weight:600}
+@media(max-width:860px){.contact{grid-template-columns:1fr}}
+footer{padding:36px 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--edge);margin-top:40px}footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+.wa{position:fixed;right:18px;bottom:18px;z-index:30;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 30px -8px rgba(0,0,0,.5)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+dialog#pd{max-height:calc(100vh - 40px);overflow:auto;position:relative}
+dialog#pd>.x{position:sticky;float:right;top:14px;margin:14px 14px -54px 0;width:40px;height:40px;border-radius:50%;border:1px solid var(--edge);background:#fff;color:var(--navy);font-size:1.2rem;cursor:pointer;z-index:3}
+.pdl{display:flex;flex-direction:column;background:var(--bg2)}
+.gal{display:flex;gap:8px;padding:10px;overflow-x:auto}
+.gal button{flex:none;width:64px;height:64px;border-radius:10px;overflow:hidden;border:2px solid transparent;padding:0;cursor:pointer;background:#fff}
+.gal button.on{border-color:var(--accent)}.gal img{width:100%;height:100%;object-fit:cover}
+.pdx{padding:6px 30px 30px;border-top:1px solid var(--edge)}
+.pdx h4{font-family:var(--display);font-size:1.15rem;margin:22px 0 10px}
+.desc p{color:var(--text);margin-bottom:10px;max-width:70ch;line-height:1.6}
+.specs{width:100%;border-collapse:collapse;font-size:.95rem}.specs td{padding:9px 10px;border-bottom:1px solid var(--edge)}.specs td:first-child{color:var(--muted);width:45%}
+</style></head><body>
+<header><div class="wrap">
+  <a class="logo" href="#top"><svg class="" width="38" height="38" viewBox="0 0 48 48" aria-hidden="true"><g fill="var(--logo)" transform="rotate(22.5 24 24)"><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(0 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(45 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(90 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(135 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(180 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(225 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(270 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(315 24 24)"/><circle cx="24" cy="24" r="16.5"/></g><circle cx="24" cy="24" r="9.6" fill="#fff"/><path d="M19.6 24.6l3.4 3.4 6.6-7.6" fill="none" stroke="var(--logo)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><b>equipcn</b></a>
+  <nav class="nav"><a href="#directions">Направления</a><a href="#catalog">Каталог</a><a href="#how">Как работаем</a><a href="#faq">Вопросы</a><a href="#contact">Контакты</a></nav>
+  <a class="btn btn-line" href="tel:+77787586354" style="padding:11px 18px">+7 778 758-63-54</a>
+</div></header>
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div>
+    <span class="eyebrow">Китай → Казахстан</span>
+    <h1>Промышленное оборудование <span class="grad">с заводов Китая под ключ</span></h1>
+    <p class="lead"><span data-cnt="all" data-fmt="pos">277 позиций</span> в 14 направлениях — от лазерных станков и мебельных линий до бетонных заводов, ферм и рыбоводства. Подбираем, проверяем качество и доставляем.</p>
+    <div class="ctas"><a class="btn btn-main" href="#contact">Получить расчёт</a><a class="btn btn-line" href="#catalog">Смотреть каталог</a></div>
+  </div>
+  <div class="orbit" aria-hidden="true">
+    <div class="ring"></div><div class="ring r2"></div>
+    <div class="core"><svg viewBox="0 0 48 48"><defs><linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5a9cf3"/><stop offset="1" stop-color="#1F5FC9"/></linearGradient></defs>
+      <g class="teeth"><g fill="url(#gg)" transform="rotate(22.5 24 24)"><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(0 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(45 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(90 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(135 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(180 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(225 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(270 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(315 24 24)"/><circle cx="24" cy="24" r="16.5"/></g></g>
+      <circle cx="24" cy="24" r="9.6" fill="#fff"/><path d="M19.6 24.6l3.4 3.4 6.6-7.6" fill="none" stroke="#1F5FC9" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <span class="chip c1"><i></i>Металлообработка <small data-cnt="metal" data-fmt="num">41</small></span>
+    <span class="chip c2"><i></i>Сельское хозяйство <small data-cnt="agro" data-fmt="num">28</small></span>
+    <span class="chip c3"><i></i>Стройматериалы <small data-cnt="build" data-fmt="num">27</small></span>
+    <span class="chip c4"><i></i>Деревообработка <small data-cnt="wood" data-fmt="num">25</small></span>
+  </div>
+</div></div>
+<div class="wrap"><div class="facts">
+  <div class="fact"><b data-cnt="all" data-fmt="num">277</b><span>позиций в каталоге</span></div>
+  <div class="fact"><b>14</b><span>направлений</span></div>
+  <div class="fact"><b>0 ₸</b><span>наценок посредников</span></div>
+  <div class="fact"><b>РК</b><span>доставка по Казахстану</span></div>
+</div></div>
+
+<section class="block" id="directions"><div class="wrap">
+  <div class="head"><div><span class="eyebrow">Направления</span><h2>14 направлений — от одного станка до целого цеха</h2></div><p>Не нашли нужное? Пришлите фото или ТЗ — подберём у производителей.</p></div>
+  <div class="bento"><button type="button" class="bx big" onclick="openGroup('metal')"><span class="ill"><svg viewBox="0 0 120 70" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 60h108M20 60V48h80v12"/><rect x="20" y="10" width="80" height="12" rx="2"/><path d="M60 22v8"/><path d="M54 30h12l-6 8z" fill="currentColor"/><path d="M60 38v10" stroke="var(--accent)"/></svg></span><span class="n" data-cnt="metal" data-fmt="num">41</span><h3>Металлообработка и лазеры</h3></button><button type="button" class="bx wide" onclick="openGroup('wood')"><span class="ill"><svg viewBox="0 0 120 70" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="44" cy="36" r="22"/><circle cx="44" cy="36" r="4"/><path d="M44 14l4-6 4 7M66 36l6 4-7 4M44 58l-4 6-4-7M22 36l-6-4 7-4"/><path d="M70 50h44M74 50V30h36v20" stroke="var(--accent)"/></svg></span><span class="n" data-cnt="wood" data-fmt="pos">25 позиций</span><h3>Деревообработка и мебель</h3></button><button type="button" class="bx wide" onclick="openGroup('build')"><span class="ill"><svg viewBox="0 0 120 70" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="40" width="30" height="20"/><rect x="45" y="40" width="30" height="20"/><rect x="80" y="40" width="30" height="20"/><rect x="27" y="18" width="30" height="20"/><rect x="62" y="18" width="30" height="20" stroke="var(--accent)"/></svg></span><span class="n" data-cnt="build" data-fmt="pos">27 позиций</span><h3>Стройматериалы и бетон</h3></button><button type="button" class="bx wide" onclick="openGroup('agro')"><span class="ill"><svg viewBox="0 0 120 70" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M60 64V10"/><path d="M60 20c-10-2-14-8-14-12 8 0 14 4 14 12zM60 20c10-2 14-8 14-12-8 0-14 4-14 12zM60 34c-10-2-14-8-14-12 8 0 14 4 14 12zM60 34c10-2 14-8 14-12-8 0-14 4-14 12zM60 48c-10-2-14-8-14-12 8 0 14 4 14 12z"/><path d="M60 48c10-2 14-8 14-12-8 0-14 4-14 12z" stroke="var(--accent)"/></svg></span><span class="n" data-cnt="agro" data-fmt="pos">28 позиций</span><h3>Сельское хозяйство и корма</h3></button><button type="button" class="bx " onclick="openGroup('food')"><span class="ill"><svg viewBox="0 0 120 70" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 60h112"/><path d="M24 60V32l5-8v-8h6v8l5 8v28M54 60V32l5-8v-8h6v8l5 8v28M84 60V32l5-8v-8h6v8l5 8v28"/><path d="M62 4v8" stroke="var(--accent)"/></svg></span><span class="n" data-cnt="food" data-fmt="pos">23 позиции</span><h3>Пищевое производство</h3></button><button type="button" class="bx " onclick="openGroup('plast')"><span class="ill"><svg viewBox="0 0 120 70" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M40 22l10-14 10 14M50 8v20"/><path d="M84 44l-6 16H58" /><path d="M36 44l-6 16h22"/><path d="M28 50l-10-4 8-14h20" /><path d="M92 50l10-4-8-14H74" stroke="var(--accent)"/></svg></span><span class="n" data-cnt="plast" data-fmt="pos">22 позиции</span><h3>Пластик и переработка</h3></button><button type="button" class="bx " onclick="openGroup('power')"><span class="ill"><svg viewBox="0 0 120 70" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="18" width="104" height="40" rx="4"/><path d="M8 30h104"/><path d="M64 36l-8 10h8l-6 8" stroke="var(--accent)"/><path d="M20 58v6M100 58v6"/></svg></span><span class="n" data-cnt="power" data-fmt="pos">21 позиция</span><h3>Компрессоры и энергетика</h3></button><button type="button" class="bx " onclick="openGroup('pack')"><span class="ill"><svg viewBox="0 0 120 70" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M30 24l30-14 30 14v30L60 68 30 54z"/><path d="M30 24l30 14 30-14M60 38v30"/><path d="M45 17l30 14" stroke="var(--accent)"/></svg></span><span class="n" data-cnt="pack" data-fmt="pos">21 позиция</span><h3>Упаковка, бумага, печать</h3></button><button type="button" class="bx " onclick="openGroup('fish')"><span class="ill"><svg viewBox="0 0 120 70" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 36c10-14 30-18 48-8l14-10v32l-14-10c-18 10-38 6-48-4z"/><circle cx="30" cy="34" r="2" fill="currentColor"/><path d="M90 30c6 2 10 4 18 2M92 42c6-2 10-2 16 0" stroke="var(--accent)"/></svg></span><span class="n" data-cnt="fish" data-fmt="pos">20 позиций</span><h3>Рыбоводство и рыбопереработка</h3></button><button type="button" class="bx " onclick="openGroup('glass')"><span class="ill"><svg viewBox="0 0 120 70" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="20" y="8" width="80" height="56" rx="2"/><path d="M60 8v56M20 36h80"/><path d="M30 18l14 14M68 18l10 10" stroke="var(--accent)"/></svg></span><span class="n" data-cnt="glass" data-fmt="pos">12 позиций</span><h3>Стекло и окна</h3></button><button type="button" class="bx " onclick="openGroup('auto')"><span class="ill"><svg viewBox="0 0 120 70" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 46l8-18c2-4 4-6 8-6h60c4 0 6 2 8 6l8 18v12H14z"/><path d="M14 46h92"/><circle cx="34" cy="58" r="7"/><circle cx="86" cy="58" r="7"/><path d="M50 34h20" stroke="var(--accent)"/></svg></span><span class="n" data-cnt="auto" data-fmt="pos">12 позиций</span><h3>Автосервис и клининг</h3></button><button type="button" class="bx " onclick="openGroup('mine')"><span class="ill"><svg viewBox="0 0 120 70" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 60l20-34 16 14 14-26 22 30 20 16z"/><path d="M50 40l14 6M64 14v10" stroke="var(--accent)"/></svg></span><span class="n" data-cnt="mine" data-fmt="pos">10 позиций</span><h3>Горнодобыча и дробление</h3></button><button type="button" class="bx " onclick="openGroup('air')"><span class="ill"><svg viewBox="0 0 120 70" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="60" cy="36" r="26"/><circle cx="60" cy="36" r="4"/><path d="M60 32c0-10 4-16 12-16-2 8-6 13-12 16zM64 36c10 0 16 4 16 12-8-2-13-6-16-12zM60 40c0 10-4 16-12 16 2-8 6-13 12-16zM56 36c-10 0-16-4-16-12 8 2 13 6 16 12z" stroke="var(--accent)"/></svg></span><span class="n" data-cnt="air" data-fmt="pos">8 позиций</span><h3>Климат и вентиляция</h3></button><button type="button" class="bx " onclick="openGroup('elec')"><span class="ill"><svg viewBox="0 0 120 70" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="36" y="14" width="48" height="44" rx="4"/><rect x="48" y="26" width="24" height="20" stroke="var(--accent)"/><path d="M44 14V6M60 14V6M76 14V6M44 66v-8M60 66v-8M76 66v-8M36 26h-8M36 46h-8M84 26h8M84 46h8"/></svg></span><span class="n" data-cnt="elec" data-fmt="pos">7 позиций</span><h3>Электроника и SMT</h3></button></div>
+</div></section>
+
+<section class="block" id="catalog" style="padding-top:0"><div class="wrap">
+  <div class="head"><div><span class="eyebrow">Каталог</span><h2>Всё оборудование по направлениям</h2></div><p><span data-cnt="all" data-fmt="pos">277 позиций</span> под заказ. Нажмите на товар, чтобы открыть карточку, или спросите цену в WhatsApp.</p></div>
+  <div class="catbar" id="catbar">
+    <div class="tools"><input id="q" type="search" placeholder="Поиск: модель, мощность, назначение" aria-label="Поиск по каталогу"><span id="found" class="found"></span></div>
+    <div class="pills" id="pills"></div>
+  </div>
+  <div id="catView"></div>
+  <p id="empty">Ничего не нашлось. <a href="#contact">Оставьте заявку</a> — подберём под вас.</p>
+</div></section>
+
+<section class="block" style="padding-top:0"><div class="wrap">
+  <div class="head"><div><span class="eyebrow">Почему Equipcn</span><h2>Работаем напрямую с производителями</h2></div></div>
+  <div class="why"><div class="wi"><span class="num">01</span><b>Проверенные заводы</b><p>Работаем только с производителями, которых проверили сами.</p></div><div class="wi"><span class="num">02</span><b>Без лишних наценок</b><p>Покупаем напрямую у завода, без цепочки посредников.</p></div><div class="wi"><span class="num">03</span><b>Контроль качества</b><p>Проверяем оборудование на каждом этапе — до отгрузки.</p></div><div class="wi"><span class="num">04</span><b>Широкий выбор</b><p>От одного станка до полной производственной линии.</p></div><div class="wi"><span class="num">05</span><b>Быстрая доставка</b><p>Логистика из Китая до вашего объекта в Казахстане.</p></div><div class="wi"><span class="num">06</span><b>Долгосрочно</b><p>Строим партнёрство, а не разовые сделки.</p></div></div>
+</div></section>
+
+<section class="block" id="how" style="padding-top:0"><div class="wrap tl">
+  <div class="stick"><span class="eyebrow">Как мы работаем</span><h2>Пять шагов до запуска</h2><p>Вы описываете задачу — остальное берём на себя.</p><a class="btn btn-main" href="#contact">Начать с заявки</a></div>
+  <div class="tsteps"><div class="ts"><div class="n">1</div><div><b>Заявка</b><p>Расскажите задачу или пришлите модель.</p></div></div><div class="ts"><div class="n">2</div><div><b>Подбор и КП</b><p>Находим варианты у заводов и считаем цену.</p></div></div><div class="ts"><div class="n">3</div><div><b>Договор</b><p>Фиксируем комплектацию, цену и сроки.</p></div></div><div class="ts"><div class="n">4</div><div><b>Контроль</b><p>Следим за производством и проверяем качество.</p></div></div><div class="ts"><div class="n">5</div><div><b>Доставка</b><p>Привозим оборудование в Казахстан.</p></div></div></div>
+</div></section>
+
+<section class="block" id="faq" style="padding-top:0"><div class="wrap">
+  <div class="head"><div><span class="eyebrow">Вопросы</span><h2>Частые вопросы</h2></div></div>
+  <div class="faq"><details class="qa" open><summary>Как узнать точную цену?<span class="pm" aria-hidden="true"></span></summary><p>Цена зависит от комплектации, мощности и доставки. Оставьте заявку или напишите в WhatsApp — менеджер подготовит расчёт под вашу задачу.</p></details><details class="qa"><summary>Можно заказать то, чего нет в каталоге?<span class="pm" aria-hidden="true"></span></summary><p>Да. Пришлите название, фото или техническое задание — мы подберём варианты у производителей в Китае.</p></details><details class="qa"><summary>Сколько ждать поставку?<span class="pm" aria-hidden="true"></span></summary><p>Срок зависит от оборудования: что-то есть на складе завода, что-то изготавливается под заказ. Точный срок фиксируем в коммерческом предложении и договоре.</p></details><details class="qa"><summary>Как проходит оплата?<span class="pm" aria-hidden="true"></span></summary><p>Порядок и условия оплаты прописываются в договоре. Детали уточните у менеджера.</p></details><details class="qa"><summary>Где вы находитесь?<span class="pm" aria-hidden="true"></span></summary><p>Офис в Алматы, ул. Жандосова, 4В. Работаем с понедельника по пятницу с 10:00 до 18:00.</p></details></div>
+</div></section>
+
+<section class="block" id="contact" style="padding-top:0"><div class="wrap"><div class="contact">
+  <div><span class="eyebrow">Заявка</span><h2>Получите расчёт стоимости</h2><p class="sub">Менеджер свяжется в рабочее время и подберёт оборудование под ваш бюджет.</p>
+    <div class="cl"><div><span>Телефон</span><a href="tel:+77787586354">+7 (778) 758-63-54</a></div><div><span>Менеджер</span>Улугбек, руководитель отдела продаж</div><div><span>Адрес</span>Алматы, ул. Жандосова, 4В</div><div><span>Часы</span>Пн–Пт 10:00–18:00</div></div></div>
+  <form id="reqForm" novalidate>
+  <label for="f-name">Ваше имя<input id="f-name" autocomplete="name" placeholder="Например, Айдар"></label>
+  <label for="f-phone">Телефон<input id="f-phone" type="tel" autocomplete="tel" placeholder="+7 7__ ___ __ __"></label>
+  <label for="f-cat">Направление<select id="f-cat"><option>Металлообработка и лазеры</option><option>Деревообработка и мебель</option><option>Стройматериалы и бетон</option><option>Сельское хозяйство и корма</option><option>Пищевое производство</option><option>Пластик и переработка</option><option>Компрессоры и энергетика</option><option>Упаковка, бумага, печать</option><option>Рыбоводство и рыбопереработка</option><option>Стекло и окна</option><option>Автосервис и клининг</option><option>Горнодобыча и дробление</option><option>Климат и вентиляция</option><option>Электроника и SMT</option><option>Другое</option></select></label>
+  <label for="f-msg">Что нужно<textarea id="f-msg" placeholder="Модель, мощность, производительность или просто задача"></textarea></label>
+  <button class="btn btn-main" type="submit">Отправить заявку в WhatsApp</button>
+  <div id="formOut" role="status"></div>
+  <span class="form-note">Заявка откроется в WhatsApp с готовым текстом — останется нажать «Отправить».</span>
+</form>
+</div></div></section>
+</main>
+<footer><div class="wrap"><a class="logo" href="#top"><svg class="" width="28" height="28" viewBox="0 0 48 48" aria-hidden="true"><g fill="var(--logo)" transform="rotate(22.5 24 24)"><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(0 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(45 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(90 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(135 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(180 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(225 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(270 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(315 24 24)"/><circle cx="24" cy="24" r="16.5"/></g><circle cx="24" cy="24" r="9.6" fill="#fff"/><path d="M19.6 24.6l3.4 3.4 6.6-7.6" fill="none" stroke="var(--logo)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><b style="font-size:1.25rem">equipcn</b></a><span>© 2026 · equipcngroup.com · Оборудование из Китая в Казахстан</span></div></footer>
+<a class="wa" href="https://wa.me/77787586354" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></svg></a>
+<dialog id="pd" aria-label="Карточка товара"></dialog>
+<script>const GROUPS=[["metal", "Металлообработка и лазеры"], ["wood", "Деревообработка и мебель"], ["build", "Стройматериалы и бетон"], ["agro", "Сельское хозяйство и корма"], ["food", "Пищевое производство"], ["plast", "Пластик и переработка"], ["power", "Компрессоры и энергетика"], ["pack", "Упаковка, бумага, печать"], ["fish", "Рыбоводство и рыбопереработка"], ["glass", "Стекло и окна"], ["auto", "Автосервис и клининг"], ["mine", "Горнодобыча и дробление"], ["air", "Климат и вентиляция"], ["elec", "Электроника и SMT"]].concat([['other','Другое оборудование']]);
+
+const ICONS={"metal": "<svg viewBox=\"0 0 120 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 60h108M20 60V48h80v12\"/><rect x=\"20\" y=\"10\" width=\"80\" height=\"12\" rx=\"2\"/><path d=\"M60 22v8\"/><path d=\"M54 30h12l-6 8z\" fill=\"currentColor\"/><path d=\"M60 38v10\" stroke=\"var(--accent)\"/></svg>", "wood": "<svg viewBox=\"0 0 120 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"44\" cy=\"36\" r=\"22\"/><circle cx=\"44\" cy=\"36\" r=\"4\"/><path d=\"M44 14l4-6 4 7M66 36l6 4-7 4M44 58l-4 6-4-7M22 36l-6-4 7-4\"/><path d=\"M70 50h44M74 50V30h36v20\" stroke=\"var(--accent)\"/></svg>", "build": "<svg viewBox=\"0 0 120 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"10\" y=\"40\" width=\"30\" height=\"20\"/><rect x=\"45\" y=\"40\" width=\"30\" height=\"20\"/><rect x=\"80\" y=\"40\" width=\"30\" height=\"20\"/><rect x=\"27\" y=\"18\" width=\"30\" height=\"20\"/><rect x=\"62\" y=\"18\" width=\"30\" height=\"20\" stroke=\"var(--accent)\"/></svg>", "agro": "<svg viewBox=\"0 0 120 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M60 64V10\"/><path d=\"M60 20c-10-2-14-8-14-12 8 0 14 4 14 12zM60 20c10-2 14-8 14-12-8 0-14 4-14 12zM60 34c-10-2-14-8-14-12 8 0 14 4 14 12zM60 34c10-2 14-8 14-12-8 0-14 4-14 12zM60 48c-10-2-14-8-14-12 8 0 14 4 14 12z\"/><path d=\"M60 48c10-2 14-8 14-12-8 0-14 4-14 12z\" stroke=\"var(--accent)\"/></svg>", "food": "<svg viewBox=\"0 0 120 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 60h112\"/><path d=\"M24 60V32l5-8v-8h6v8l5 8v28M54 60V32l5-8v-8h6v8l5 8v28M84 60V32l5-8v-8h6v8l5 8v28\"/><path d=\"M62 4v8\" stroke=\"var(--accent)\"/></svg>", "plast": "<svg viewBox=\"0 0 120 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M40 22l10-14 10 14M50 8v20\"/><path d=\"M84 44l-6 16H58\" /><path d=\"M36 44l-6 16h22\"/><path d=\"M28 50l-10-4 8-14h20\" /><path d=\"M92 50l10-4-8-14H74\" stroke=\"var(--accent)\"/></svg>", "power": "<svg viewBox=\"0 0 120 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"18\" width=\"104\" height=\"40\" rx=\"4\"/><path d=\"M8 30h104\"/><path d=\"M64 36l-8 10h8l-6 8\" stroke=\"var(--accent)\"/><path d=\"M20 58v6M100 58v6\"/></svg>", "pack": "<svg viewBox=\"0 0 120 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M30 24l30-14 30 14v30L60 68 30 54z\"/><path d=\"M30 24l30 14 30-14M60 38v30\"/><path d=\"M45 17l30 14\" stroke=\"var(--accent)\"/></svg>", "fish": "<svg viewBox=\"0 0 120 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M18 36c10-14 30-18 48-8l14-10v32l-14-10c-18 10-38 6-48-4z\"/><circle cx=\"30\" cy=\"34\" r=\"2\" fill=\"currentColor\"/><path d=\"M90 30c6 2 10 4 18 2M92 42c6-2 10-2 16 0\" stroke=\"var(--accent)\"/></svg>", "glass": "<svg viewBox=\"0 0 120 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"20\" y=\"8\" width=\"80\" height=\"56\" rx=\"2\"/><path d=\"M60 8v56M20 36h80\"/><path d=\"M30 18l14 14M68 18l10 10\" stroke=\"var(--accent)\"/></svg>", "auto": "<svg viewBox=\"0 0 120 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 46l8-18c2-4 4-6 8-6h60c4 0 6 2 8 6l8 18v12H14z\"/><path d=\"M14 46h92\"/><circle cx=\"34\" cy=\"58\" r=\"7\"/><circle cx=\"86\" cy=\"58\" r=\"7\"/><path d=\"M50 34h20\" stroke=\"var(--accent)\"/></svg>", "mine": "<svg viewBox=\"0 0 120 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 60l20-34 16 14 14-26 22 30 20 16z\"/><path d=\"M50 40l14 6M64 14v10\" stroke=\"var(--accent)\"/></svg>", "air": "<svg viewBox=\"0 0 120 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"60\" cy=\"36\" r=\"26\"/><circle cx=\"60\" cy=\"36\" r=\"4\"/><path d=\"M60 32c0-10 4-16 12-16-2 8-6 13-12 16zM64 36c10 0 16 4 16 12-8-2-13-6-16-12zM60 40c0 10-4 16-12 16 2-8 6-13 12-16zM56 36c-10 0-16-4-16-12 8 2 13 6 16 12z\" stroke=\"var(--accent)\"/></svg>", "elec": "<svg viewBox=\"0 0 120 70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"36\" y=\"14\" width=\"48\" height=\"44\" rx=\"4\"/><rect x=\"48\" y=\"26\" width=\"24\" height=\"20\" stroke=\"var(--accent)\"/><path d=\"M44 14V6M60 14V6M76 14V6M44 66v-8M60 66v-8M76 66v-8M36 26h-8M36 46h-8M84 26h8M84 46h8\"/></svg>"};
+const PRODUCTS=/*DATA*/[]/*END*/;
+const COUNTS={};PRODUCTS.forEach(p=>COUNTS[p.cat]=(COUNTS[p.cat]||0)+1);
+ICONS.other=ICONS.pack;
+const WA='https://wa.me/77787586354?text=';
+const PAGE=12;
+function fmt(n){return Number(n).toLocaleString('ru-RU').replace(/,/g,' ');}
+function priceHTML(p){if(!p.price)return '<small>Цена по запросу</small>';const from=p.price[0]==='~';return (from?'<small>от </small>':'')+fmt(p.price.replace('~',''))+'&nbsp;₸';}
+function askHref(p){return WA+encodeURIComponent('Здравствуйте! Интересует: '+p.name+' (код '+p.id+')');}
+function imgHTML(p){return p.images&&p.images.length?'<img loading="lazy" alt="" src="'+p.images[0]+'" onerror="this.remove()">':'';}
+function gname(k){const g=GROUPS.find(x=>x[0]===k);return g?g[1]:'';}
+function setupCatalog(tpl){
+  const grid=document.getElementById('prodGrid'),q=document.getElementById('q'),pills=document.getElementById('pills'),empty=document.getElementById('empty'),more=document.getElementById('more'),found=document.getElementById('found');
+  let cat='all',shown=PAGE;
+  pills.innerHTML='<button type="button" class="pill on" data-k="all">Все <span>'+PRODUCTS.length+'</span></button>'+GROUPS.filter(g=>COUNTS[g[0]]).map(([k,v])=>'<button type="button" class="pill" data-k="'+k+'">'+v+' <span>'+COUNTS[k]+'</span></button>').join('');
+  function setCat(k){cat=k;shown=PAGE;pills.querySelectorAll('.pill').forEach(x=>x.classList.toggle('on',x.dataset.k===k));draw();}
+  pills.addEventListener('click',e=>{const b=e.target.closest('.pill');if(b)setCat(b.dataset.k);});
+  function list(){const s=(q.value||'').trim().toLowerCase();const words=s.split(/\s+/).filter(Boolean);return PRODUCTS.filter(p=>(cat==='all'||p.cat===cat)&&words.every(w=>(p.name+' '+gname(p.cat)).toLowerCase().includes(w)));}
+  function draw(){const l=list();grid.innerHTML=l.slice(0,shown).map(tpl).join('');empty.style.display=l.length?'none':'block';more.style.display=l.length>shown?'inline-flex':'none';more.textContent='Показать ещё ('+(l.length-shown)+')';if(found)found.textContent=l.length+' '+plural(l.length);}
+  more.addEventListener('click',()=>{shown+=PAGE*2;draw();});
+  q.addEventListener('input',()=>{shown=PAGE;draw();});
+  draw();
+  window.openGroup=k=>{setCat(k);document.getElementById('catalog').scrollIntoView({behavior:'smooth'});};
+  window.searchFor=v=>{q.value=v;cat='all';setCat('all');document.getElementById('catalog').scrollIntoView({behavior:'smooth'});};
+}
+function plural(n){return n%10==1&&n%100!=11?'позиция':(n%10>=2&&n%10<=4&&(n%100<12||n%100>14)?'позиции':'позиций');}
+function setupForm(){
+  const f=document.getElementById('reqForm');if(!f)return;
+  f.addEventListener('submit',e=>{e.preventDefault();const v=id=>document.getElementById(id).value.trim();const out=document.getElementById('formOut');out.style.display='block';
+    if(!v('f-phone')){out.textContent='Укажите телефон, чтобы мы могли вам перезвонить.';document.getElementById('f-phone').focus();return;}
+    const text='Заявка с сайта equipcngroup.com\nИмя: '+(v('f-name')||'—')+'\nТелефон: '+v('f-phone')+'\nНаправление: '+v('f-cat')+'\nЗадача: '+(v('f-msg')||'—');
+    out.innerHTML='Заявка готова. <a target="_blank" rel="noopener" href="'+WA+encodeURIComponent(text)+'">Открыть WhatsApp и отправить →</a>';});
+}
+
+const card=p=>`<button type="button" class="prod" data-id="${p.id}"><div class="art">${ICONS[p.cat]}${imgHTML(p)}<span class="tag">Под заказ</span></div><span class="grp">${gname(p.cat)}</span><h3>${p.name}</h3><div class="row"><span class="price">${priceHTML(p)}</span><span class="ask" aria-hidden="true">→</span></div></button>`;
+(function(){
+ const view=document.getElementById('catView'),q=document.getElementById('q'),pills=document.getElementById('pills'),empty=document.getElementById('empty'),found=document.getElementById('found');
+ let cat='all';
+ pills.innerHTML='<button type="button" class="pill on" data-k="all">Все направления <span>'+PRODUCTS.length+'</span></button>'+GROUPS.filter(g=>COUNTS[g[0]]).map(([k,v])=>'<button type="button" class="pill" data-k="'+k+'">'+v+' <span>'+COUNTS[k]+'</span></button>').join('');
+ const head=(k,n,btn)=>`<div class="ghead"><span class="gico">${ICONS[k]}</span><div><h3>${n}</h3><span class="cnt">${COUNTS[k]} ${plural(COUNTS[k])}</span></div>${btn?`<button type="button" class="all" data-k="${k}">Смотреть все ${COUNTS[k]} →</button>`:''}</div>`;
+ function render(){
+  const s=q.value.trim().toLowerCase(),w=s.split(/\s+/).filter(Boolean);
+  pills.querySelectorAll('.pill').forEach(x=>x.classList.toggle('on',x.dataset.k===cat));
+  let html='',n=0;
+  if(w.length){
+    const l=PRODUCTS.filter(p=>(cat==='all'||p.cat===cat)&&w.every(x=>(p.name+' '+gname(p.cat)).toLowerCase().includes(x)));n=l.length;
+    html='<div class="prods" style="margin-top:24px">'+l.map(card).join('')+'</div>';
+  }else if(cat==='all'){
+    n=PRODUCTS.length;
+    html=GROUPS.filter(g=>COUNTS[g[0]]).map(([k,v])=>{const l=PRODUCTS.filter(p=>p.cat===k);return `<section class="gsec" id="g-${k}">${head(k,v,true)}<div class="prods">${l.slice(0,3).map(card).join('')}</div></section>`;}).join('');
+  }else{
+    const l=PRODUCTS.filter(p=>p.cat===cat);n=l.length;
+    html=`<button type="button" class="back" data-k="all">← Все направления</button><section class="gsec">${head(cat,gname(cat),false)}<div class="prods">${l.map(card).join('')}</div></section>`;
+  }
+  view.innerHTML=html;empty.style.display=n?'none':'block';found.textContent=n+' '+plural(n);
+ }
+ function setCat(k,scroll){cat=k;try{history.replaceState(null,'',k==='all'?'#catalog':'#cat-'+k)}catch(e){location.hash=k==='all'?'catalog':'cat-'+k}render();if(scroll)document.getElementById('catalog').scrollIntoView({behavior:'smooth'});}
+ document.addEventListener('click',e=>{const b=e.target.closest('.pill,.all,.back');if(b&&b.dataset.k){setCat(b.dataset.k,true);return;}
+   const c=e.target.closest('.prod');if(c)openProd(c.dataset.id);});
+ q.addEventListener('input',render);
+ window.openGroup=k=>setCat(k,true);
+ const fromHash=()=>{const m=location.hash.match(/^#cat-(\w+)$/);if(m&&COUNTS[m[1]]){cat=m[1];render();setTimeout(()=>document.getElementById('catalog').scrollIntoView(),50);}};
+ addEventListener('hashchange',fromHash);
+ render();fromHash();
+ // карточка товара
+ const dlg=document.getElementById('pd');
+ window.openProd=id=>{const p=PRODUCTS.find(x=>x.id===id);if(!p)return;
+  const esc=t=>String(t||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+  const imgs=(p.images||[]);
+  const gal=imgs.length>1?'<div class="gal">'+imgs.map((u,i)=>'<button type="button" data-src="'+u+'"'+(i?'':' class="on"')+'><img src="'+u+'" alt=""></button>').join('')+'</div>':'';
+  const desc=p.desc?'<div class="desc">'+esc(p.desc).split(/\n{2,}/).map(x=>'<p>'+x.replace(/\n/g,'<br>')+'</p>').join('')+'</div>':'';
+  const specs=p.specs&&p.specs.length?'<table class="specs">'+p.specs.map(r=>'<tr><td>'+esc(r[0])+'</td><td>'+esc(r[1])+'</td></tr>').join('')+'</table>':'';
+  dlg.innerHTML=`<button type="button" class="x" aria-label="Закрыть">×</button><div class="pd"><div class="pdl"><div class="art" id="pdArt">${ICONS[p.cat]}${imgHTML(p)}</div>${gal}</div><div class="info"><span class="grp" style="padding:0">${gname(p.cat)}</span><h3>${esc(p.name)}</h3><span class="price">${priceHTML(p)}</span><a class="btn btn-main" target="_blank" rel="noopener" href="${askHref(p)}">Узнать цену в WhatsApp</a><a class="btn btn-line" href="tel:+77787586354">Позвонить: +7 778 758-63-54</a><span style="color:var(--muted);font-size:.85rem">Под заказ · Код товара: ${p.id}</span></div></div>${desc||specs?'<div class="pdx">'+(desc?'<h4>Описание</h4>'+desc:'')+(specs?'<h4>Характеристики</h4>'+specs:'')+'</div>':''}`;
+  dlg.querySelectorAll('.gal button').forEach(b=>b.onclick=()=>{dlg.querySelectorAll('.gal button').forEach(x=>x.classList.toggle('on',x===b));const im=dlg.querySelector('#pdArt img');if(im)im.src=b.dataset.src;});
+  dlg.querySelector('.x').onclick=()=>dlg.close();
+  if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');};
+ dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close();});
+})();
+setupForm();
+document.querySelectorAll('[data-cnt]').forEach(el=>{const k=el.dataset.cnt,n=k==='all'?PRODUCTS.length:(COUNTS[k]||0);el.textContent=el.dataset.fmt==='pos'?n+' '+plural(n):n;});
+</script></body></html>

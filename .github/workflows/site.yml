@@ -1,0 +1,51 @@
+name: Обновить каталог и опубликовать сайт
+
+on:
+  workflow_dispatch:
+    inputs:
+      scrape:
+        description: "Собрать свежие данные с Сату (описания, фото, новые товары)"
+        type: boolean
+        default: true
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 21 * * 0"   # каждое воскресенье ночью — автообновление каталога
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: site
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests beautifulsoup4
+      - name: Собрать каталог с Сату
+        if: github.event_name != 'workflow_dispatch' || inputs.scrape
+        run: python scraper/scrape.py
+      - name: Собрать сайт
+        run: python scraper/build.py
+      - name: Сохранить собранные данные и фото в репозиторий
+        run: |
+          git config user.name "equipcn-bot"
+          git config user.email "equipcn-bot@users.noreply.github.com"
+          git add data site
+          git diff --cached --quiet || (git commit -m "Обновление каталога с Сату" && git push)
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4
