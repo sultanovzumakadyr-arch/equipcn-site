@@ -1,0 +1,10 @@
+{
+  "_help": "Вставьте ID из Google Ads и Google Analytics. Пустые значения = отслеживание выключено.",
+  "google_ads_id": "",
+  "ga4_id": "",
+  "conversions": {
+    "whatsapp": "",
+    "phone": "",
+    "form": ""
+  }
+}

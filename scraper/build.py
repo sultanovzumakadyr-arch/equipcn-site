@@ -39,6 +39,23 @@ def clean_name(n):
     return n[:1].upper() + n[1:]
 
 
+def tracking_html():
+    tp = ROOT / "data" / "tracking.json"
+    if not tp.exists():
+        return ""
+    t = json.loads(tp.read_text("utf8"))
+    ads, ga = t.get("google_ads_id", "").strip(), t.get("ga4_id", "").strip()
+    if not ads and not ga:
+        return ""
+    first = ads or ga
+    conv = {k: v for k, v in (t.get("conversions") or {}).items() if v}
+    cfg = "".join(f"gtag('config','{i}');" for i in (ads, ga) if i)
+    return ("<script async src=\"https://www.googletagmanager.com/gtag/js?id=" + first + "\"></script>"
+            "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
+            "gtag('js',new Date());" + cfg +
+            "window.EQ_CONV=" + json.dumps({k: f"{ads}/{v}" for k, v in conv.items()} if ads else {}) + ";</script>")
+
+
 def main():
     curated = {}
     for line in (ROOT / "data" / "curated.txt").read_text("utf8").strip().splitlines():
@@ -72,6 +89,7 @@ def main():
     tpl = (ROOT / "template.html").read_text("utf8")
     data = json.dumps(products, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     html = re.sub(r"/\*DATA\*/.*?/\*END\*/", lambda m: data, tpl, count=1, flags=re.S)
+    html = html.replace("</head>", tracking_html() + "</head>", 1)
     out = ROOT / "site" / "index.html"
     out.parent.mkdir(exist_ok=True)
     out.write_text(html, "utf8")

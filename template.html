@@ -339,6 +339,13 @@ const card=p=>`<button type="button" class="prod" data-id="${p.id}"><div class="
 })();
 setupForm();
 
+// отслеживание заявок для Google Ads / Analytics
+(function(){function track(kind,label){try{if(!window.gtag)return;gtag('event',kind,{event_category:'lead',event_label:label||''});const c=(window.EQ_CONV||{})[kind];if(c)gtag('event','conversion',{send_to:c});}catch(e){}}
+ document.addEventListener('click',e=>{const a=e.target.closest('a');if(!a)return;const h=a.getAttribute('href')||'';
+  if(h.startsWith('https://wa.me'))track('whatsapp',a.textContent.trim().slice(0,60));else if(h.startsWith('tel:'))track('phone');},true);
+ const f=document.getElementById('reqForm');if(f)f.addEventListener('submit',()=>{if(document.getElementById('f-phone').value.trim())track('form');});
+})();
+
 (function(){const SHORT={metal:'Металлообработка',wood:'Деревообработка',build:'Стройматериалы',agro:'Сельское хозяйство',food:'Пищевое производство',plast:'Пластик и переработка',power:'Компрессоры и энергетика',pack:'Упаковка и печать',fish:'Рыбоводство',glass:'Стекло и окна',auto:'Автосервис',mine:'Горнодобыча',air:'Климат',elec:'Электроника',other:'Другое'};
  const gs=GROUPS.map(g=>g[0]).filter(k=>COUNTS[k]);const chips=[...document.querySelectorAll('.orbit .chip')];let i=0;
  function fill(){chips.forEach((c,j)=>{const k=gs[(i+j)%gs.length];c.dataset.k=k;c.querySelector('.cn').textContent=SHORT[k]||gname(k);c.querySelector('small').textContent=COUNTS[k];c.setAttribute('aria-label','Открыть: '+gname(k));});}
