@@ -46,6 +46,9 @@ def main():
         curated[pid] = {"id": pid, "cat": g, "name": name, "price": price, "img": img}
     sp = ROOT / "data" / "scraped.json"
     scraped = json.loads(sp.read_text("utf8")) if sp.exists() else []
+    hp = ROOT / "data" / "hidden.txt"
+    hidden = set(hp.read_text("utf8").split()) if hp.exists() else set()
+    scraped = [x for x in scraped if x["id"] not in hidden]
     products = []
     if scraped:
         for s in scraped:

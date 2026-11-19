@@ -16,3 +16,6 @@
 Файл `data/curated.txt`, формат строки: `код|группа|название|цена|фото`.
 Группы: metal, wood, build, agro, food, plast, power, pack, fish, glass, auto, mine, air, elec.
 Цена: `~3000000` — «от 3 000 000 ₸», пусто — «цена по запросу».
+
+## Скрыть товар с сайта
+Добавьте его код в `data/hidden.txt` (по одному в строке).

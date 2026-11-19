@@ -31,7 +31,7 @@ jobs:
           python-version: "3.12"
       - run: pip install requests beautifulsoup4
       - name: Собрать каталог с Сату
-        if: github.event_name != 'workflow_dispatch' || inputs.scrape
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.scrape)
         run: python scraper/scrape.py
       - name: Собрать сайт
         run: python scraper/build.py
