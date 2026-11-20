@@ -165,7 +165,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--light)}t
 footer{padding:36px 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--edge);margin-top:40px}footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
 .wa{position:fixed;right:18px;bottom:18px;z-index:30;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 30px -8px rgba(0,0,0,.5)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
-dialog#pd{max-height:calc(100vh - 40px);overflow:auto;position:relative}
+dialog#pd{max-height:calc(100dvh - 32px);overflow:auto;position:fixed;inset:0;margin:auto;height:fit-content;overscroll-behavior:contain}
 dialog#pd>.x{position:sticky;float:right;top:14px;margin:14px 14px -54px 0;width:40px;height:40px;border-radius:50%;border:1px solid var(--edge);background:#fff;color:var(--navy);font-size:1.2rem;cursor:pointer;z-index:3}
 .pdl{display:flex;flex-direction:column;background:var(--bg2)}
 .gal{display:flex;gap:8px;padding:10px;overflow-x:auto}
@@ -209,6 +209,7 @@ dialog#pd>.x{position:sticky;float:right;top:14px;margin:14px 14px -54px 0;width
  .prod .tag{display:none}
  .catbar .tools{margin-bottom:8px}
 }
+@media(max-width:560px){dialog#pd{width:100%;max-width:100%;max-height:100dvh;height:100dvh;border-radius:0;border:0}.pd .info{padding:20px}.pdx{padding:4px 20px 90px}.pd .art{min-height:240px}}
 </style></head><body>
 <header><div class="wrap">
   <a class="logo" href="#top"><svg class="" width="38" height="38" viewBox="0 0 48 48" aria-hidden="true"><g fill="var(--logo)" transform="rotate(22.5 24 24)"><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(0 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(45 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(90 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(135 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(180 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(225 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(270 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(315 24 24)"/><circle cx="24" cy="24" r="16.5"/></g><circle cx="24" cy="24" r="9.6" fill="#fff"/><path d="M19.6 24.6l3.4 3.4 6.6-7.6" fill="none" stroke="var(--logo)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><b>equipcn</b></a>
