@@ -349,7 +349,7 @@ const card=p=>`<button type="button" class="prod" data-id="${p.id}"><div class="
    const c=e.target.closest('.prod');if(c)openProd(c.dataset.id);});
  q.addEventListener('input',render);
  window.openGroup=k=>setCat(k,true);
- const fromHash=()=>{const m=location.hash.match(/^#cat-(\w+)$/);if(m&&COUNTS[m[1]]){cat=m[1];render();setTimeout(()=>document.getElementById('catalog').scrollIntoView(),50);}};
+ const fromHash=()=>{const pm=location.hash.match(/^#p-(\d+)$/);if(pm){setTimeout(()=>openProd(pm[1]),60);return;}const m=location.hash.match(/^#cat-(\w+)$/);if(m&&COUNTS[m[1]]){cat=m[1];render();setTimeout(()=>document.getElementById('catalog').scrollIntoView(),50);}};
  addEventListener('hashchange',fromHash);
  render();fromHash();
  // карточка товара
