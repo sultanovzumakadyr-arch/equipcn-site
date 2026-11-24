@@ -289,10 +289,14 @@ def load_sources():
     return res
 
 
+REMOVED = {"tools", "lift", "special"}  # 24.11: решили не продавать — только основное оборудование
+
+
 def main():
     srcs = load_sources()
     out = []
     for i, (cat, name, fob, purpose, specs) in enumerate(ITEMS, 1):
+        if cat in REMOVED: continue
         out.append({"id": f"x{1000 + i}", "cat": cat, "name": name, "price": f"~{price(fob)}",
                     "images": [], "desc": desc(name, purpose), "specs": [list(s) for s in specs] + [["Страна производства", "Китай"]],
                     "fob_usd": fob, "rate": RATE, "markup": MARKUP, "source": "tender",
