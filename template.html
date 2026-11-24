@@ -299,7 +299,7 @@ const PAGE=12;
 function fmt(n){return Number(n).toLocaleString('ru-RU').replace(/,/g,' ');}
 function priceHTML(p){if(!p.price)return '<small>Цена по запросу</small>';const from=p.price[0]==='~';return (from?'<small>от </small>':'')+fmt(p.price.replace('~',''))+'&nbsp;₸';}
 function askHref(p){return WA+encodeURIComponent('Здравствуйте! Интересует: '+p.name+' (код '+p.id+')');}
-function imgHTML(p){return p.images&&p.images.length?'<img loading="lazy" alt="" src="'+p.images[0]+'" onerror="this.remove()">':'';}
+function imgHTML(p){return p.images&&p.images.length?'<img loading="lazy" referrerpolicy="no-referrer" alt="" src="'+p.images[0]+'" onerror="this.remove()">':'';}
 function gname(k){const g=GROUPS.find(x=>x[0]===k);return g?g[1]:'';}
 function setupCatalog(tpl){
   const grid=document.getElementById('prodGrid'),q=document.getElementById('q'),pills=document.getElementById('pills'),empty=document.getElementById('empty'),more=document.getElementById('more'),found=document.getElementById('found');
@@ -359,7 +359,7 @@ const card=p=>`<button type="button" class="prod" data-id="${p.id}"><div class="
  window.openProd=id=>{const p=PRODUCTS.find(x=>x.id===id);if(!p)return;
   const esc=t=>String(t||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const imgs=(p.images||[]);
-  const gal=imgs.length>1?'<div class="gal">'+imgs.map((u,i)=>'<button type="button" data-src="'+u+'"'+(i?'':' class="on"')+'><img src="'+u+'" alt=""></button>').join('')+'</div>':'';
+  const gal=imgs.length>1?'<div class="gal">'+imgs.map((u,i)=>'<button type="button" data-src="'+u+'"'+(i?'':' class="on"')+'><img referrerpolicy="no-referrer" src="'+u+'" alt=""></button>').join('')+'</div>':'';
   const desc=p.desc?'<div class="desc">'+esc(p.desc).split(/\n{2,}/).map(x=>'<p>'+x.replace(/\n/g,'<br>')+'</p>').join('')+'</div>':'';
   const specs=p.specs&&p.specs.length?'<table class="specs">'+p.specs.map(r=>'<tr><td>'+esc(r[0])+'</td><td>'+esc(r[1])+'</td></tr>').join('')+'</table>':'';
   dlg.innerHTML=`<button type="button" class="x" aria-label="Закрыть">×</button><div class="pd"><div class="pdl"><div class="art" id="pdArt">${ICONS[p.cat]}${imgHTML(p)}</div>${gal}</div><div class="info"><span class="grp" style="padding:0">${gname(p.cat)}</span><h3>${esc(p.name)}</h3><span class="price">${priceHTML(p)}</span><a class="btn btn-main" target="_blank" rel="noopener" href="${askHref(p)}">Узнать цену в WhatsApp</a><a class="btn btn-line" href="tel:+77787586354">Позвонить: +7 778 758-63-54</a><span style="color:var(--muted);font-size:.85rem">Под заказ · Код товара: ${p.id}</span></div></div>${desc||specs?'<div class="pdx">'+(desc?'<h4>Описание</h4>'+desc:'')+(specs?'<h4>Характеристики</h4>'+specs:'')+'</div>':''}`;
