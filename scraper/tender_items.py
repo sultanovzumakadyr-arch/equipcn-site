@@ -202,6 +202,65 @@ ITEMS = [
 ]
 
 
+# Русское название → английский запрос для поиска источника на Alibaba / Made-in-China
+EN = [("УШМ","angle grinder"),("Прямошлиф","die grinder"),("Ленточная шлиф","belt sander"),("Полировальная","car polisher"),
+ ("Дрель-миксер","paint mixer drill"),("Дрель ударная","impact drill"),("ударный шуруповёрт","cordless impact driver brushless"),("шуруповёрт","cordless drill"),
+ ("SDS-max","rotary hammer SDS max"),("Перфоратор","rotary hammer SDS plus"),("Отбойный","demolition hammer"),("Пневматический гайковёрт","pneumatic impact wrench"),
+ ("гайковёрт","impact wrench"),("Торцовочная","miter saw"),("Циркулярная пила","circular saw"),("Сабельная","reciprocating saw"),("Электролобзик","jigsaw"),
+ ("Цепная электропила","electric chain saw"),("Бензопила","gasoline chainsaw"),("Монтажная пила","cut off machine"),("Гравер","rotary tool engraver"),
+ ("Фрезер ручной","electric router"),("Магнитный","magnetic drill"),("Технический фен","heat gun"),("Набор аккумуляторного","cordless power tool combo kit"),
+ ("Инверторный генератор","inverter generator"),("Бензиновый генератор","gasoline generator"),("Сварочный дизель-генератор","diesel welder generator"),
+ ("Передвижная ДЭС","trailer diesel generator"),("Дизельная электростанция","diesel generator silent"),("Дизельный генератор","diesel generator"),
+ ("Безмасляный медицинский","oil free dental air compressor"),("Передвижной дизельный компрессор","portable diesel screw air compressor"),
+ ("Винтовой компрессор","screw air compressor"),("Компрессор поршневой","piston air compressor"),
+ ("Домкрат бутылочный","hydraulic bottle jack"),("Домкрат подкатной","floor jack"),("пневмогидравлический","air hydraulic jack"),("реечный","high lift jack"),
+ ("Таль ручная","manual chain hoist"),("Таль рычажная","lever hoist"),("Тельфер","electric wire rope hoist"),("цепная таль","electric chain hoist"),
+ ("Лебёдка электрическая","electric winch"),("Лебёдка рычажная","wire rope pulling hoist"),("двухстоечный","2 post car lift"),("ножничный автомобильный","scissor car lift"),
+ ("четырёхстоечный","4 post car lift"),("Ножничный самоходный","self propelled scissor lift"),("Коленчатый","articulated boom lift"),("Мачтовый","mast lift"),
+ ("Вертикальный подъёмник для инвалид","wheelchair platform lift"),("лестничный подъёмник","inclined wheelchair stair lift"),("Винтоподъёмник","screw jack"),
+ ("кран (журавль)","shop crane engine hoist"),("Штабелёр","electric stacker"),("рохля","hand pallet truck"),
+ ("MMA","MMA welding machine"),("MIG","MIG welding machine"),("TIG","TIG AC DC welder"),("Плазморез","plasma cutter"),("стыковой сварки ПНД","HDPE butt fusion machine"),
+ ("точечной сварки","spot welding machine"),("Сварочный трансформатор","arc welding transformer"),("Сварочный агрегат","diesel welding generator"),("оптоволокна","fusion splicer"),
+ ("грязной воды","trash pump"),("пожарная","fire fighting pump"),("Пожарная мотопомпа","diesel fire pump"),("Прицепная","trailer diesel water pump"),
+ ("Дизельная мотопомпа","diesel water pump"),("Бензиновая мотопомпа","gasoline water pump"),("высоконапорная","high pressure water pump"),
+ ("дренажный","submersible drainage pump"),("фекальный","sewage grinder pump"),
+ ("Токарный станок с ЧПУ","CNC lathe"),("Настольный токарный","mini lathe"),("Токарно-винторезный","lathe machine"),("Универсально-фрезерный","universal milling machine"),
+ ("Вертикально-фрезерный","vertical milling machine"),("VMC850","VMC850 machining center"),("Вертикально-сверлильный","drill press Z5040"),("Настольный сверлильный","bench drill press"),
+ ("Радиально-сверлильный","radial drilling machine"),("Заточной","bench grinder"),("Ленточнопильный станок по металлу","metal band saw"),("гильотина","hydraulic shearing machine"),
+ ("Листогиб","manual sheet metal folder"),("Трубогиб ручной","hydraulic pipe bender"),("Трубогиб электро","electric hydraulic pipe bender"),("Труборез ручной","tube cutter"),
+ ("резьбонарезной","pipe threading machine"),("Плоскошлифовальный","surface grinder"),("обжима рукавов","hose crimping machine"),("Брикетировочный","metal chip briquetting press"),
+ ("Фильтр-пресс","chamber filter press"),("пресс 100 т","four column hydraulic press 100 ton"),("пресс 50 т","shop press 50 ton"),
+ ("Тиски станочные","machine vise"),("Тиски","bench vise"),("Наковальня","anvil"),
+ ("Рейсмусовый","thickness planer"),("Фуговально","planer thicknesser"),("Комбинированный дерево","combination woodworking machine"),("Токарный станок по дереву","wood lathe"),
+ ("Циркулярный станок","table saw"),("Ленточнопильный станок по дереву","woodworking band saw"),("MX5117","wood spindle moulder"),("Сверлильно-присадочный","boring machine 21 spindle"),
+ ("Плиткорез","electric tile cutter"),("Камнерезный","stone cutting machine"),("JZC350","JZC350 concrete mixer"),("Бетоносмеситель","concrete mixer"),("Виброплита","plate compactor"),
+ ("Затирочная","power trowel"),("Швонарезчик","concrete floor saw"),
+ ("3CX","backhoe loader 3CX type"),("WZ30-25","WZ30-25 backhoe loader"),("LW300","LW300 wheel loader"),("Фронтальный погрузчик","wheel loader 5 ton"),("Мини-погрузчик","mini loader"),
+ ("Вилочный погрузчик дизель","diesel forklift 3 ton"),("Вилочный погрузчик электр","electric forklift"),("Мини-экскаватор","mini excavator"),
+ ("Шиномонтажный станок для грузов","truck tire changer"),("Шиномонтажный","tire changer"),("с подогревом","hot water pressure washer"),("Мойка высокого","high pressure washer"),
+ ("Гладильный","industrial ironing press"),("Пресс-подборщик","square baler")]
+
+import re as _re
+from urllib.parse import quote_plus
+
+def en_query(name):
+    base = next((en for ru, en in EN if ru.lower() in name.lower()), "")
+    tr = {"мм":"mm","Вт":"W","кВт":"kW","кВА":"kVA","т":"ton","л":"L","м":"m","А":"A","В":"V","Н·м":"Nm","Дж":"J","бар":"bar"}
+    parts = []
+    for num, unit in _re.findall(r"(\d+(?:/\d+)?(?:[,.]\d+)?)\s?(мм|кВт|кВА|Вт|Н·м|Дж|бар|т|л|м|А|В|\")(?=[\s,)]|$)", name):
+        s = num.replace(",", ".") + ("\"" if unit == "\"" else " " + tr[unit])
+        if s not in base and s not in parts: parts.append(s)
+    models = [m for m in _re.findall(r"\b[A-Z]{1,3}\d{3,5}\b", name) if m not in base]
+    return " ".join([base] + models + parts).strip() or name
+
+
+def sources(name):
+    q = en_query(name)
+    return {"en_query": q,
+            "alibaba": "https://www.alibaba.com/trade/search?SearchText=" + quote_plus(q),
+            "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/" + "_".join(_re.findall(r"[A-Za-z0-9.]+", q)) + ".html"}
+
+
 def price(fob):
     p = fob * RATE * MARKUP
     step = 1000 if p < 100_000 else 5000 if p < 1_000_000 else 10000 if p < 10_000_000 else 50000
@@ -221,8 +280,12 @@ def main():
     for i, (cat, name, fob, purpose, specs) in enumerate(ITEMS, 1):
         out.append({"id": f"x{1000 + i}", "cat": cat, "name": name, "price": f"~{price(fob)}",
                     "images": [], "desc": desc(name, purpose), "specs": [list(s) for s in specs] + [["Страна производства", "Китай"]],
-                    "fob_usd": fob, "source": "tender"})
+                    "fob_usd": fob, "rate": RATE, "markup": MARKUP, "source": "tender",
+                    "src": sources(name), "source_url": ""})
     ep = ROOT / "data" / "extra.json"
+    old = {e["id"]: e for e in json.loads(ep.read_text("utf8"))} if ep.exists() else {}
+    for e in out:
+        if old.get(e["id"], {}).get("source_url"): e["source_url"] = old[e["id"]]["source_url"]
     other = [e for e in json.loads(ep.read_text("utf8")) if e.get("source") != "tender"] if ep.exists() else []
     ep.write_text(json.dumps(other + out, ensure_ascii=False, indent=1), "utf8")
     print(f"Позиций под тендеры: {len(out)}")

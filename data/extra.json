@@ -33,7 +33,15 @@
    ]
   ],
   "fob_usd": 22,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "angle grinder 125 mm 1100 W",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=angle+grinder+125+mm+1100+W",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/angle_grinder_125_mm_1100_W.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1002",
@@ -65,7 +73,15 @@
    ]
   ],
   "fob_usd": 30,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "angle grinder 150 mm 1400 W",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=angle+grinder+150+mm+1400+W",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/angle_grinder_150_mm_1400_W.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1003",
@@ -101,7 +117,15 @@
    ]
   ],
   "fob_usd": 45,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "angle grinder 230 mm 2400 W",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=angle+grinder+230+mm+2400+W",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/angle_grinder_230_mm_2400_W.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1004",
@@ -133,7 +157,15 @@
    ]
   ],
   "fob_usd": 45,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "angle grinder 125 mm 21 V",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=angle+grinder+125+mm+21+V",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/angle_grinder_125_mm_21_V.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1005",
@@ -161,7 +193,15 @@
    ]
   ],
   "fob_usd": 25,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "die grinder 500 W 6 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=die+grinder+500+W+6+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/die_grinder_500_W_6_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1006",
@@ -189,7 +229,15 @@
    ]
   ],
   "fob_usd": 40,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "belt sander 533 mm 1200 W",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=belt+sander+533+mm+1200+W",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/belt_sander_533_mm_1200_W.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1007",
@@ -217,7 +265,15 @@
    ]
   ],
   "fob_usd": 38,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "car polisher 180 mm 1400 W",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=car+polisher+180+mm+1400+W",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/car_polisher_180_mm_1400_W.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1008",
@@ -249,7 +305,15 @@
    ]
   ],
   "fob_usd": 20,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "impact drill 850 W 13 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=impact+drill+850+W+13+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/impact_drill_850_W_13_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1009",
@@ -277,7 +341,15 @@
    ]
   ],
   "fob_usd": 45,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "paint mixer drill 1600 W",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=paint+mixer+drill+1600+W",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/paint_mixer_drill_1600_W.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1010",
@@ -309,7 +381,15 @@
    ]
   ],
   "fob_usd": 28,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "cordless drill 18 V 45 Nm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=cordless+drill+18+V+45+Nm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/cordless_drill_18_V_45_Nm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1011",
@@ -341,7 +421,15 @@
    ]
   ],
   "fob_usd": 40,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "cordless impact driver brushless 21 V 60 Nm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=cordless+impact+driver+brushless+21+V+60+Nm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/cordless_impact_driver_brushless_21_V_60_Nm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1012",
@@ -373,7 +461,15 @@
    ]
   ],
   "fob_usd": 35,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "rotary hammer SDS plus 800 W 2.8 J",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=rotary+hammer+SDS+plus+800+W+2.8+J",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/rotary_hammer_SDS_plus_800_W_2.8_J.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1013",
@@ -405,7 +501,15 @@
    ]
   ],
   "fob_usd": 50,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "rotary hammer SDS plus 1200 W 4 J",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=rotary+hammer+SDS+plus+1200+W+4+J",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/rotary_hammer_SDS_plus_1200_W_4_J.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1014",
@@ -437,7 +541,15 @@
    ]
   ],
   "fob_usd": 85,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "rotary hammer SDS max 1500 W 10 J",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=rotary+hammer+SDS+max+1500+W+10+J",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/rotary_hammer_SDS_max_1500_W_10_J.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1015",
@@ -469,7 +581,15 @@
    ]
   ],
   "fob_usd": 110,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "demolition hammer 1700 W 45 J",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=demolition+hammer+1700+W+45+J",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/demolition_hammer_1700_W_45_J.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1016",
@@ -501,7 +621,15 @@
    ]
   ],
   "fob_usd": 55,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "impact wrench 1/2\" 21 V 500 Nm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=impact+wrench+1%2F2%22+21+V+500+Nm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/impact_wrench_1_2_21_V_500_Nm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1017",
@@ -529,7 +657,15 @@
    ]
   ],
   "fob_usd": 35,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "pneumatic impact wrench 1/2\" 1000 Nm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=pneumatic+impact+wrench+1%2F2%22+1000+Nm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/pneumatic_impact_wrench_1_2_1000_Nm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1018",
@@ -557,7 +693,15 @@
    ]
   ],
   "fob_usd": 85,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "impact wrench 3/4\" 1000 W",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=impact+wrench+3%2F4%22+1000+W",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/impact_wrench_3_4_1000_W.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1019",
@@ -589,7 +733,15 @@
    ]
   ],
   "fob_usd": 85,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "miter saw 255 mm 1800 W",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=miter+saw+255+mm+1800+W",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/miter_saw_255_mm_1800_W.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1020",
@@ -617,7 +769,15 @@
    ]
   ],
   "fob_usd": 40,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "circular saw 185 mm 1500 W",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=circular+saw+185+mm+1500+W",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/circular_saw_185_mm_1500_W.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1021",
@@ -645,7 +805,15 @@
    ]
   ],
   "fob_usd": 35,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "reciprocating saw 1100 W",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=reciprocating+saw+1100+W",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/reciprocating_saw_1100_W.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1022",
@@ -673,7 +841,15 @@
    ]
   ],
   "fob_usd": 25,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "jigsaw 800 W",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=jigsaw+800+W",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/jigsaw_800_W.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1023",
@@ -701,7 +877,15 @@
    ]
   ],
   "fob_usd": 45,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "electric chain saw 2200 W",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=electric+chain+saw+2200+W",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/electric_chain_saw_2200_W.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1024",
@@ -729,7 +913,15 @@
    ]
   ],
   "fob_usd": 70,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "gasoline chainsaw",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=gasoline+chainsaw",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/gasoline_chainsaw.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1025",
@@ -757,7 +949,15 @@
    ]
   ],
   "fob_usd": 60,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "cut off machine 355 mm 2200 W",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=cut+off+machine+355+mm+2200+W",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/cut_off_machine_355_mm_2200_W.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1026",
@@ -785,7 +985,15 @@
    ]
   ],
   "fob_usd": 18,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "rotary tool engraver 180 W",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=rotary+tool+engraver+180+W",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/rotary_tool_engraver_180_W.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1027",
@@ -813,7 +1021,15 @@
    ]
   ],
   "fob_usd": 60,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "electric router 1800 W 12 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=electric+router+1800+W+12+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/electric_router_1800_W_12_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1028",
@@ -841,7 +1057,15 @@
    ]
   ],
   "fob_usd": 220,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "magnetic drill 35 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=magnetic+drill+35+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/magnetic_drill_35_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1029",
@@ -865,7 +1089,15 @@
    ]
   ],
   "fob_usd": 18,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "heat gun 2000 W",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=heat+gun+2000+W",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/heat_gun_2000_W.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1030",
@@ -893,7 +1125,15 @@
    ]
   ],
   "fob_usd": 120,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "cordless power tool combo kit 21 V",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=cordless+power+tool+combo+kit+21+V",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/cordless_power_tool_combo_kit_21_V.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1031",
@@ -925,7 +1165,15 @@
    ]
   ],
   "fob_usd": 150,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "gasoline generator 3 kW",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=gasoline+generator+3+kW",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/gasoline_generator_3_kW.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1032",
@@ -961,7 +1209,15 @@
    ]
   ],
   "fob_usd": 220,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "gasoline generator 5.5 kW",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=gasoline+generator+5.5+kW",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/gasoline_generator_5.5_kW.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1033",
@@ -993,7 +1249,15 @@
    ]
   ],
   "fob_usd": 330,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "gasoline generator 8 kW 380/220 V",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=gasoline+generator+8+kW+380%2F220+V",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/gasoline_generator_8_kW_380_220_V.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1034",
@@ -1021,7 +1285,15 @@
    ]
   ],
   "fob_usd": 300,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "inverter generator 3.5 kW",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=inverter+generator+3.5+kW",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/inverter_generator_3.5_kW.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1035",
@@ -1053,7 +1325,15 @@
    ]
   ],
   "fob_usd": 600,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "diesel generator 6 kW",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=diesel+generator+6+kW",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/diesel_generator_6_kW.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1036",
@@ -1085,7 +1365,15 @@
    ]
   ],
   "fob_usd": 1500,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "diesel generator 10 kW",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=diesel+generator+10+kW",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/diesel_generator_10_kW.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1037",
@@ -1121,7 +1409,15 @@
    ]
   ],
   "fob_usd": 3300,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "diesel generator silent 20 kW 25 kVA",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=diesel+generator+silent+20+kW+25+kVA",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/diesel_generator_silent_20_kW_25_kVA.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1038",
@@ -1153,7 +1449,15 @@
    ]
   ],
   "fob_usd": 4000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "diesel generator silent 30 kW 38 kVA",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=diesel+generator+silent+30+kW+38+kVA",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/diesel_generator_silent_30_kW_38_kVA.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1039",
@@ -1185,7 +1489,15 @@
    ]
   ],
   "fob_usd": 5500,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "diesel generator silent 50 kW 63 kVA",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=diesel+generator+silent+50+kW+63+kVA",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/diesel_generator_silent_50_kW_63_kVA.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1040",
@@ -1217,7 +1529,15 @@
    ]
   ],
   "fob_usd": 7500,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "diesel generator silent 80 kW 100 kVA",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=diesel+generator+silent+80+kW+100+kVA",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/diesel_generator_silent_80_kW_100_kVA.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1041",
@@ -1249,7 +1569,15 @@
    ]
   ],
   "fob_usd": 9000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "diesel generator silent 100 kW 125 kVA",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=diesel+generator+silent+100+kW+125+kVA",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/diesel_generator_silent_100_kW_125_kVA.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1042",
@@ -1277,7 +1605,15 @@
    ]
   ],
   "fob_usd": 12500,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "diesel generator silent 150 kW 188 kVA",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=diesel+generator+silent+150+kW+188+kVA",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/diesel_generator_silent_150_kW_188_kVA.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1043",
@@ -1305,7 +1641,15 @@
    ]
   ],
   "fob_usd": 16000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "diesel generator silent 200 kW 250 kVA",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=diesel+generator+silent+200+kW+250+kVA",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/diesel_generator_silent_200_kW_250_kVA.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1044",
@@ -1333,7 +1677,15 @@
    ]
   ],
   "fob_usd": 24000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "diesel generator silent 300 kW 375 kVA",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=diesel+generator+silent+300+kW+375+kVA",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/diesel_generator_silent_300_kW_375_kVA.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1045",
@@ -1361,7 +1713,15 @@
    ]
   ],
   "fob_usd": 42000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "diesel generator silent 500 kW 625 kVA",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=diesel+generator+silent+500+kW+625+kVA",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/diesel_generator_silent_500_kW_625_kVA.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1046",
@@ -1389,7 +1749,15 @@
    ]
   ],
   "fob_usd": 13500,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "trailer diesel generator 100 kW",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=trailer+diesel+generator+100+kW",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/trailer_diesel_generator_100_kW.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1047",
@@ -1417,7 +1785,15 @@
    ]
   ],
   "fob_usd": 2800,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "diesel welder generator 300 A",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=diesel+welder+generator+300+A",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/diesel_welder_generator_300_A.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1048",
@@ -1449,7 +1825,15 @@
    ]
   ],
   "fob_usd": 90,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "piston air compressor 50 L 220 V",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=piston+air+compressor+50+L+220+V",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/piston_air_compressor_50_L_220_V.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1049",
@@ -1481,7 +1865,15 @@
    ]
   ],
   "fob_usd": 230,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "piston air compressor 100 L",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=piston+air+compressor+100+L",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/piston_air_compressor_100_L.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1050",
@@ -1513,7 +1905,15 @@
    ]
   ],
   "fob_usd": 320,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "piston air compressor 200 L 3 kW",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=piston+air+compressor+200+L+3+kW",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/piston_air_compressor_200_L_3_kW.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1051",
@@ -1545,7 +1945,15 @@
    ]
   ],
   "fob_usd": 600,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "piston air compressor 300 L 5.5 kW",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=piston+air+compressor+300+L+5.5+kW",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/piston_air_compressor_300_L_5.5_kW.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1052",
@@ -1577,7 +1985,15 @@
    ]
   ],
   "fob_usd": 1300,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "piston air compressor 500 L 7.5 kW 12.5 bar",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=piston+air+compressor+500+L+7.5+kW+12.5+bar",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/piston_air_compressor_500_L_7.5_kW_12.5_bar.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1053",
@@ -1605,7 +2021,15 @@
    ]
   ],
   "fob_usd": 1600,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "screw air compressor 7.5 kW",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=screw+air+compressor+7.5+kW",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/screw_air_compressor_7.5_kW.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1054",
@@ -1633,7 +2057,15 @@
    ]
   ],
   "fob_usd": 2600,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "screw air compressor 15 kW",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=screw+air+compressor+15+kW",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/screw_air_compressor_15_kW.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1055",
@@ -1665,7 +2097,15 @@
    ]
   ],
   "fob_usd": 4200,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "screw air compressor 22 kW",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=screw+air+compressor+22+kW",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/screw_air_compressor_22_kW.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1056",
@@ -1697,7 +2137,15 @@
    ]
   ],
   "fob_usd": 6000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "screw air compressor 37 kW",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=screw+air+compressor+37+kW",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/screw_air_compressor_37_kW.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1057",
@@ -1725,7 +2173,15 @@
    ]
   ],
   "fob_usd": 4700,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "portable diesel screw air compressor",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=portable+diesel+screw+air+compressor",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/portable_diesel_screw_air_compressor.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1058",
@@ -1753,7 +2209,15 @@
    ]
   ],
   "fob_usd": 9500,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "portable diesel screw air compressor",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=portable+diesel+screw+air+compressor",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/portable_diesel_screw_air_compressor.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1059",
@@ -1781,7 +2245,15 @@
    ]
   ],
   "fob_usd": 24000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "portable diesel screw air compressor 18 bar",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=portable+diesel+screw+air+compressor+18+bar",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/portable_diesel_screw_air_compressor_18_bar.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1060",
@@ -1809,7 +2281,15 @@
    ]
   ],
   "fob_usd": 450,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "oil free dental air compressor 50 L",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=oil+free+dental+air+compressor+50+L",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/oil_free_dental_air_compressor_50_L.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1061",
@@ -1837,7 +2317,15 @@
    ]
   ],
   "fob_usd": 12,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "hydraulic bottle jack 5 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=hydraulic+bottle+jack+5+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/hydraulic_bottle_jack_5_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1062",
@@ -1861,7 +2349,15 @@
    ]
   ],
   "fob_usd": 16,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "hydraulic bottle jack 10 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=hydraulic+bottle+jack+10+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/hydraulic_bottle_jack_10_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1063",
@@ -1889,7 +2385,15 @@
    ]
   ],
   "fob_usd": 25,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "hydraulic bottle jack 20 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=hydraulic+bottle+jack+20+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/hydraulic_bottle_jack_20_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1064",
@@ -1913,7 +2417,15 @@
    ]
   ],
   "fob_usd": 55,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "hydraulic bottle jack 50 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=hydraulic+bottle+jack+50+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/hydraulic_bottle_jack_50_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1065",
@@ -1941,7 +2453,15 @@
    ]
   ],
   "fob_usd": 70,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "floor jack 3 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=floor+jack+3+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/floor_jack_3_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1066",
@@ -1965,7 +2485,15 @@
    ]
   ],
   "fob_usd": 90,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "air hydraulic jack 30 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=air+hydraulic+jack+30+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/air_hydraulic_jack_30_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1067",
@@ -1989,7 +2517,15 @@
    ]
   ],
   "fob_usd": 35,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "high lift jack 3 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=high+lift+jack+3+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/high_lift_jack_3_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1068",
@@ -2013,7 +2549,15 @@
    ]
   ],
   "fob_usd": 30,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "manual chain hoist 1 ton 3 m",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=manual+chain+hoist+1+ton+3+m",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/manual_chain_hoist_1_ton_3_m.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1069",
@@ -2037,7 +2581,15 @@
    ]
   ],
   "fob_usd": 55,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "manual chain hoist 3 ton 3 m",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=manual+chain+hoist+3+ton+3+m",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/manual_chain_hoist_3_ton_3_m.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1070",
@@ -2061,7 +2613,15 @@
    ]
   ],
   "fob_usd": 90,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "manual chain hoist 5 ton 3 m",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=manual+chain+hoist+5+ton+3+m",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/manual_chain_hoist_5_ton_3_m.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1071",
@@ -2085,7 +2645,15 @@
    ]
   ],
   "fob_usd": 40,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "lever hoist 3 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=lever+hoist+3+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/lever_hoist_3_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1072",
@@ -2117,7 +2685,15 @@
    ]
   ],
   "fob_usd": 450,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "electric wire rope hoist 1 ton 6 m",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=electric+wire+rope+hoist+1+ton+6+m",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/electric_wire_rope_hoist_1_ton_6_m.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1073",
@@ -2145,7 +2721,15 @@
    ]
   ],
   "fob_usd": 650,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "electric wire rope hoist 2 ton 12 m",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=electric+wire+rope+hoist+2+ton+12+m",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/electric_wire_rope_hoist_2_ton_12_m.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1074",
@@ -2173,7 +2757,15 @@
    ]
   ],
   "fob_usd": 1100,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "electric wire rope hoist 5 ton 12 m",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=electric+wire+rope+hoist+5+ton+12+m",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/electric_wire_rope_hoist_5_ton_12_m.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1075",
@@ -2201,7 +2793,15 @@
    ]
   ],
   "fob_usd": 600,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "electric chain hoist 2 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=electric+chain+hoist+2+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/electric_chain_hoist_2_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1076",
@@ -2229,7 +2829,15 @@
    ]
   ],
   "fob_usd": 250,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "electric winch 220 V",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=electric+winch+220+V",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/electric_winch_220_V.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1077",
@@ -2257,7 +2865,15 @@
    ]
   ],
   "fob_usd": 700,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "electric winch 1 ton 100 m",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=electric+winch+1+ton+100+m",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/electric_winch_1_ton_100_m.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1078",
@@ -2281,7 +2897,15 @@
    ]
   ],
   "fob_usd": 80,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "wire rope pulling hoist 3.2 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=wire+rope+pulling+hoist+3.2+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/wire_rope_pulling_hoist_3.2_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1079",
@@ -2309,7 +2933,15 @@
    ]
   ],
   "fob_usd": 900,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "2 post car lift 4 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=2+post+car+lift+4+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/2_post_car_lift_4_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1080",
@@ -2333,7 +2965,15 @@
    ]
   ],
   "fob_usd": 2300,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "scissor car lift 3.5 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=scissor+car+lift+3.5+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/scissor_car_lift_3.5_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1081",
@@ -2357,7 +2997,15 @@
    ]
   ],
   "fob_usd": 1800,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "4 post car lift 4 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=4+post+car+lift+4+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/4_post_car_lift_4_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1082",
@@ -2389,7 +3037,15 @@
    ]
   ],
   "fob_usd": 7500,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "self propelled scissor lift 8 m",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=self+propelled+scissor+lift+8+m",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/self_propelled_scissor_lift_8_m.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1083",
@@ -2417,7 +3073,15 @@
    ]
   ],
   "fob_usd": 10500,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "self propelled scissor lift 12 m",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=self+propelled+scissor+lift+12+m",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/self_propelled_scissor_lift_12_m.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1084",
@@ -2445,7 +3109,15 @@
    ]
   ],
   "fob_usd": 26000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "articulated boom lift 16 m",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=articulated+boom+lift+16+m",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/articulated_boom_lift_16_m.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1085",
@@ -2473,7 +3145,15 @@
    ]
   ],
   "fob_usd": 3500,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "mast lift 8 m",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=mast+lift+8+m",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/mast_lift_8_m.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1086",
@@ -2505,7 +3185,15 @@
    ]
   ],
   "fob_usd": 3500,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "wheelchair platform lift",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=wheelchair+platform+lift",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/wheelchair_platform_lift.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1087",
@@ -2529,7 +3217,15 @@
    ]
   ],
   "fob_usd": 4500,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "inclined wheelchair stair lift",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=inclined+wheelchair+stair+lift",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/inclined_wheelchair_stair_lift.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1088",
@@ -2553,7 +3249,15 @@
    ]
   ],
   "fob_usd": 300,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "screw jack 5 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=screw+jack+5+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/screw_jack_5_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1089",
@@ -2577,7 +3281,15 @@
    ]
   ],
   "fob_usd": 150,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "shop crane engine hoist 2 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=shop+crane+engine+hoist+2+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/shop_crane_engine_hoist_2_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1090",
@@ -2605,7 +3317,15 @@
    ]
   ],
   "fob_usd": 2200,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "electric stacker 1.5 ton 3.3 m",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=electric+stacker+1.5+ton+3.3+m",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/electric_stacker_1.5_ton_3.3_m.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1091",
@@ -2629,7 +3349,15 @@
    ]
   ],
   "fob_usd": 120,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "hand pallet truck 3 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=hand+pallet+truck+3+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/hand_pallet_truck_3_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1092",
@@ -2657,7 +3385,15 @@
    ]
   ],
   "fob_usd": 60,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "MMA welding machine 200 A",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=MMA+welding+machine+200+A",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/MMA_welding_machine_200_A.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1093",
@@ -2685,7 +3421,15 @@
    ]
   ],
   "fob_usd": 120,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "MMA welding machine 250 A 380 V",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=MMA+welding+machine+250+A+380+V",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/MMA_welding_machine_250_A_380_V.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1094",
@@ -2713,7 +3457,15 @@
    ]
   ],
   "fob_usd": 160,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "MMA welding machine 315 A 380 V",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=MMA+welding+machine+315+A+380+V",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/MMA_welding_machine_315_A_380_V.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1095",
@@ -2741,7 +3493,15 @@
    ]
   ],
   "fob_usd": 150,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "MIG welding machine 200 A",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=MIG+welding+machine+200+A",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/MIG_welding_machine_200_A.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1096",
@@ -2773,7 +3533,15 @@
    ]
   ],
   "fob_usd": 550,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "MIG welding machine 350 A 380 V",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=MIG+welding+machine+350+A+380+V",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/MIG_welding_machine_350_A_380_V.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1097",
@@ -2801,7 +3569,15 @@
    ]
   ],
   "fob_usd": 900,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "MIG welding machine 500 A",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=MIG+welding+machine+500+A",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/MIG_welding_machine_500_A.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1098",
@@ -2825,7 +3601,15 @@
    ]
   ],
   "fob_usd": 330,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "TIG AC DC welder",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=TIG+AC+DC+welder",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/TIG_AC_DC_welder.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1099",
@@ -2853,7 +3637,15 @@
    ]
   ],
   "fob_usd": 220,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "plasma cutter",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=plasma+cutter",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/plasma_cutter.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1100",
@@ -2881,7 +3673,15 @@
    ]
   ],
   "fob_usd": 450,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "plasma cutter 380 V",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=plasma+cutter+380+V",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/plasma_cutter_380_V.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1101",
@@ -2909,7 +3709,15 @@
    ]
   ],
   "fob_usd": 2000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "HDPE butt fusion machine 250 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=HDPE+butt+fusion+machine+250+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/HDPE_butt_fusion_machine_250_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1102",
@@ -2933,7 +3741,15 @@
    ]
   ],
   "fob_usd": 900,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "spot welding machine 25 kVA",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=spot+welding+machine+25+kVA",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/spot_welding_machine_25_kVA.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1103",
@@ -2957,7 +3773,15 @@
    ]
   ],
   "fob_usd": 250,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "arc welding transformer 315 A",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=arc+welding+transformer+315+A",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/arc_welding_transformer_315_A.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1104",
@@ -2985,7 +3809,15 @@
    ]
   ],
   "fob_usd": 4500,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "diesel welding generator 400 A",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=diesel+welding+generator+400+A",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/diesel_welding_generator_400_A.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1105",
@@ -3013,7 +3845,15 @@
    ]
   ],
   "fob_usd": 900,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "fusion splicer",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=fusion+splicer",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/fusion_splicer.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1106",
@@ -3041,7 +3881,15 @@
    ]
   ],
   "fob_usd": 110,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "gasoline water pump 2\"",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=gasoline+water+pump+2%22",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/gasoline_water_pump_2.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1107",
@@ -3069,7 +3917,15 @@
    ]
   ],
   "fob_usd": 130,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "gasoline water pump 3\"",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=gasoline+water+pump+3%22",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/gasoline_water_pump_3.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1108",
@@ -3097,7 +3953,15 @@
    ]
   ],
   "fob_usd": 220,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "trash pump 3\"",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=trash+pump+3%22",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/trash_pump_3.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1109",
@@ -3125,7 +3989,15 @@
    ]
   ],
   "fob_usd": 330,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "diesel water pump 3\"",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=diesel+water+pump+3%22",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/diesel_water_pump_3.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1110",
@@ -3157,7 +4029,15 @@
    ]
   ],
   "fob_usd": 450,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "diesel water pump 4\"",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=diesel+water+pump+4%22",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/diesel_water_pump_4.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1111",
@@ -3181,7 +4061,15 @@
    ]
   ],
   "fob_usd": 280,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "fire fighting pump 2\"",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=fire+fighting+pump+2%22",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/fire_fighting_pump_2.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1112",
@@ -3209,7 +4097,15 @@
    ]
   ],
   "fob_usd": 1200,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "fire fighting pump",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=fire+fighting+pump",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/fire_fighting_pump.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1113",
@@ -3237,7 +4133,15 @@
    ]
   ],
   "fob_usd": 4400,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "trailer diesel water pump 6\"",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=trailer+diesel+water+pump+6%22",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/trailer_diesel_water_pump_6.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1114",
@@ -3261,7 +4165,15 @@
    ]
   ],
   "fob_usd": 60,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "submersible drainage pump 1.1 kW",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=submersible+drainage+pump+1.1+kW",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/submersible_drainage_pump_1.1_kW.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1115",
@@ -3289,7 +4201,15 @@
    ]
   ],
   "fob_usd": 180,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "sewage grinder pump 2.2 kW",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=sewage+grinder+pump+2.2+kW",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/sewage_grinder_pump_2.2_kW.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1116",
@@ -3321,7 +4241,15 @@
    ]
   ],
   "fob_usd": 6500,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "lathe machine CA6140 1000 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=lathe+machine+CA6140+1000+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/lathe_machine_CA6140_1000_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1117",
@@ -3349,7 +4277,15 @@
    ]
   ],
   "fob_usd": 9000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "lathe machine CA6150 1500 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=lathe+machine+CA6150+1500+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/lathe_machine_CA6150_1500_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1118",
@@ -3377,7 +4313,15 @@
    ]
   ],
   "fob_usd": 18000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "lathe machine CW6163 3000 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=lathe+machine+CW6163+3000+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/lathe_machine_CW6163_3000_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1119",
@@ -3405,7 +4349,15 @@
    ]
   ],
   "fob_usd": 1100,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "mini lathe 550 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=mini+lathe+550+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/mini_lathe_550_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1120",
@@ -3433,7 +4385,15 @@
    ]
   ],
   "fob_usd": 13000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "CNC lathe CK6140",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=CNC+lathe+CK6140",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/CNC_lathe_CK6140.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1121",
@@ -3461,7 +4421,15 @@
    ]
   ],
   "fob_usd": 8000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "universal milling machine X6332",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=universal+milling+machine+X6332",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/universal_milling_machine_X6332.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1122",
@@ -3489,7 +4457,15 @@
    ]
   ],
   "fob_usd": 15000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "vertical milling machine X5032",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=vertical+milling+machine+X5032",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/vertical_milling_machine_X5032.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1123",
@@ -3517,7 +4493,15 @@
    ]
   ],
   "fob_usd": 30000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "VMC850 machining center",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=VMC850+machining+center",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/VMC850_machining_center.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1124",
@@ -3545,7 +4529,15 @@
    ]
   ],
   "fob_usd": 1800,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "drill press Z5040",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=drill+press+Z5040",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/drill_press_Z5040.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1125",
@@ -3573,7 +4565,15 @@
    ]
   ],
   "fob_usd": 120,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "bench drill press 16 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=bench+drill+press+16+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/bench_drill_press_16_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1126",
@@ -3597,7 +4597,15 @@
    ]
   ],
   "fob_usd": 6000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "radial drilling machine Z3040",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=radial+drilling+machine+Z3040",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/radial_drilling_machine_Z3040.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1127",
@@ -3621,7 +4629,15 @@
    ]
   ],
   "fob_usd": 70,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "bench grinder 200 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=bench+grinder+200+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/bench_grinder_200_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1128",
@@ -3645,7 +4661,15 @@
    ]
   ],
   "fob_usd": 1200,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "metal band saw G4028",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=metal+band+saw+G4028",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/metal_band_saw_G4028.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1129",
@@ -3673,7 +4697,15 @@
    ]
   ],
   "fob_usd": 9000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "hydraulic shearing machine 6 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=hydraulic+shearing+machine+6+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/hydraulic_shearing_machine_6_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1130",
@@ -3697,7 +4729,15 @@
    ]
   ],
   "fob_usd": 1200,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "manual sheet metal folder 2000 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=manual+sheet+metal+folder+2000+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/manual_sheet_metal_folder_2000_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1131",
@@ -3721,7 +4761,15 @@
    ]
   ],
   "fob_usd": 120,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "hydraulic pipe bender 2\"",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=hydraulic+pipe+bender+2%22",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/hydraulic_pipe_bender_2.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1132",
@@ -3745,7 +4793,15 @@
    ]
   ],
   "fob_usd": 900,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "electric hydraulic pipe bender 4\"",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=electric+hydraulic+pipe+bender+4%22",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/electric_hydraulic_pipe_bender_4.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1133",
@@ -3765,7 +4821,15 @@
    ]
   ],
   "fob_usd": 10,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "tube cutter 50 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=tube+cutter+50+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/tube_cutter_50_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1134",
@@ -3789,7 +4853,15 @@
    ]
   ],
   "fob_usd": 450,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "pipe threading machine 2\"",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=pipe+threading+machine+2%22",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/pipe_threading_machine_2.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1135",
@@ -3813,7 +4885,15 @@
    ]
   ],
   "fob_usd": 9500,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "surface grinder M7130",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=surface+grinder+M7130",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/surface_grinder_M7130.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1136",
@@ -3837,7 +4917,15 @@
    ]
   ],
   "fob_usd": 1600,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "hose crimping machine 2\"",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=hose+crimping+machine+2%22",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/hose_crimping_machine_2.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1137",
@@ -3865,7 +4953,15 @@
    ]
   ],
   "fob_usd": 450,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "shop press 50 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=shop+press+50+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/shop_press_50_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1138",
@@ -3893,7 +4989,15 @@
    ]
   ],
   "fob_usd": 5000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "four column hydraulic press 100 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=four+column+hydraulic+press+100+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/four_column_hydraulic_press_100_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1139",
@@ -3917,7 +5021,15 @@
    ]
   ],
   "fob_usd": 9000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "metal chip briquetting press",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=metal+chip+briquetting+press",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/metal_chip_briquetting_press.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1140",
@@ -3941,7 +5053,15 @@
    ]
   ],
   "fob_usd": 6000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "chamber filter press",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=chamber+filter+press",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/chamber_filter_press.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1141",
@@ -3965,7 +5085,15 @@
    ]
   ],
   "fob_usd": 18,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "bench vise 125 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=bench+vise+125+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/bench_vise_125_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1142",
@@ -3989,7 +5117,15 @@
    ]
   ],
   "fob_usd": 28,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "bench vise 150 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=bench+vise+150+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/bench_vise_150_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1143",
@@ -4013,7 +5149,15 @@
    ]
   ],
   "fob_usd": 55,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "bench vise 200 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=bench+vise+200+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/bench_vise_200_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1144",
@@ -4037,7 +5181,15 @@
    ]
   ],
   "fob_usd": 60,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "machine vise 160 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=machine+vise+160+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/machine_vise_160_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1145",
@@ -4061,7 +5213,15 @@
    ]
   ],
   "fob_usd": 70,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "anvil",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=anvil",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/anvil.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1146",
@@ -4085,7 +5245,15 @@
    ]
   ],
   "fob_usd": 300,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "thickness planer 330 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=thickness+planer+330+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/thickness_planer_330_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1147",
@@ -4109,7 +5277,15 @@
    ]
   ],
   "fob_usd": 800,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "thickness planer 310 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=thickness+planer+310+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/thickness_planer_310_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1148",
@@ -4133,7 +5309,15 @@
    ]
   ],
   "fob_usd": 1800,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "combination woodworking machine",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=combination+woodworking+machine",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/combination_woodworking_machine.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1149",
@@ -4157,7 +5341,15 @@
    ]
   ],
   "fob_usd": 400,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "wood lathe 1000 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=wood+lathe+1000+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/wood_lathe_1000_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1150",
@@ -4181,7 +5373,15 @@
    ]
   ],
   "fob_usd": 350,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "table saw 315 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=table+saw+315+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/table_saw_315_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1151",
@@ -4205,7 +5405,15 @@
    ]
   ],
   "fob_usd": 700,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "woodworking band saw 400 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=woodworking+band+saw+400+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/woodworking_band_saw_400_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1152",
@@ -4229,7 +5437,15 @@
    ]
   ],
   "fob_usd": 900,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "wood spindle moulder MX5117",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=wood+spindle+moulder+MX5117",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/wood_spindle_moulder_MX5117.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1153",
@@ -4253,7 +5469,15 @@
    ]
   ],
   "fob_usd": 1500,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "boring machine 21 spindle",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=boring+machine+21+spindle",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/boring_machine_21_spindle.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1154",
@@ -4281,7 +5505,15 @@
    ]
   ],
   "fob_usd": 350,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "electric tile cutter 800 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=electric+tile+cutter+800+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/electric_tile_cutter_800_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1155",
@@ -4309,7 +5541,15 @@
    ]
   ],
   "fob_usd": 700,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "stone cutting machine 1200 mm 350 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=stone+cutting+machine+1200+mm+350+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/stone_cutting_machine_1200_mm_350_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1156",
@@ -4333,7 +5573,15 @@
    ]
   ],
   "fob_usd": 120,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "concrete mixer 160 L 220 V",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=concrete+mixer+160+L+220+V",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/concrete_mixer_160_L_220_V.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1157",
@@ -4357,7 +5605,15 @@
    ]
   ],
   "fob_usd": 220,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "concrete mixer 250 L",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=concrete+mixer+250+L",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/concrete_mixer_250_L.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1158",
@@ -4381,7 +5637,15 @@
    ]
   ],
   "fob_usd": 830,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "concrete mixer 350 L",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=concrete+mixer+350+L",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/concrete_mixer_350_L.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1159",
@@ -4409,7 +5673,15 @@
    ]
   ],
   "fob_usd": 1200,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "JZC350 concrete mixer",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=JZC350+concrete+mixer",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/JZC350_concrete_mixer.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1160",
@@ -4433,7 +5705,15 @@
    ]
   ],
   "fob_usd": 250,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "plate compactor",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=plate+compactor",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/plate_compactor.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1161",
@@ -4457,7 +5737,15 @@
    ]
   ],
   "fob_usd": 350,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "power trowel 900 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=power+trowel+900+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/power_trowel_900_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1162",
@@ -4481,7 +5769,15 @@
    ]
   ],
   "fob_usd": 450,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "concrete floor saw 500 mm",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=concrete+floor+saw+500+mm",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/concrete_floor_saw_500_mm.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1163",
@@ -4513,7 +5809,15 @@
    ]
   ],
   "fob_usd": 20000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "WZ30-25 backhoe loader",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=WZ30-25+backhoe+loader",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/WZ30_25_backhoe_loader.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1164",
@@ -4545,7 +5849,15 @@
    ]
   ],
   "fob_usd": 38000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "backhoe loader 3CX type 8 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=backhoe+loader+3CX+type+8+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/backhoe_loader_3CX_type_8_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1165",
@@ -4573,7 +5885,15 @@
    ]
   ],
   "fob_usd": 21000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "LW300 wheel loader 3 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=LW300+wheel+loader+3+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/LW300_wheel_loader_3_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1166",
@@ -4601,7 +5921,15 @@
    ]
   ],
   "fob_usd": 40000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "wheel loader 5 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=wheel+loader+5+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/wheel_loader_5_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1167",
@@ -4625,7 +5953,15 @@
    ]
   ],
   "fob_usd": 8000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "mini loader 1 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=mini+loader+1+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/mini_loader_1_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1168",
@@ -4653,7 +5989,15 @@
    ]
   ],
   "fob_usd": 9000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "diesel forklift 3 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=diesel+forklift+3+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/diesel_forklift_3_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1169",
@@ -4681,7 +6025,15 @@
    ]
   ],
   "fob_usd": 7000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "electric forklift 1.5 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=electric+forklift+1.5+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/electric_forklift_1.5_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1170",
@@ -4709,7 +6061,15 @@
    ]
   ],
   "fob_usd": 6500,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "mini excavator 1.8 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=mini+excavator+1.8+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/mini_excavator_1.8_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1171",
@@ -4733,7 +6093,15 @@
    ]
   ],
   "fob_usd": 14000,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "mini excavator 3.5 ton",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=mini+excavator+3.5+ton",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/mini_excavator_3.5_ton.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1172",
@@ -4757,7 +6125,15 @@
    ]
   ],
   "fob_usd": 700,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "tire changer",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=tire+changer",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/tire_changer.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1173",
@@ -4781,7 +6157,15 @@
    ]
   ],
   "fob_usd": 2200,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "truck tire changer 26\"",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=truck+tire+changer+26%22",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/truck_tire_changer_26.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1174",
@@ -4809,7 +6193,15 @@
    ]
   ],
   "fob_usd": 350,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "high pressure washer 200 bar 380 V",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=high+pressure+washer+200+bar+380+V",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/high_pressure_washer_200_bar_380_V.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1175",
@@ -4833,7 +6225,15 @@
    ]
   ],
   "fob_usd": 1500,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "hot water pressure washer",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=hot+water+pressure+washer",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/hot_water_pressure_washer.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1176",
@@ -4857,7 +6257,15 @@
    ]
   ],
   "fob_usd": 600,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "industrial ironing press",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=industrial+ironing+press",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/industrial_ironing_press.html"
+  },
+  "source_url": ""
  },
  {
   "id": "x1177",
@@ -4881,6 +6289,14 @@
    ]
   ],
   "fob_usd": 3500,
-  "source": "tender"
+  "rate": 455.12,
+  "markup": 1.35,
+  "source": "tender",
+  "src": {
+   "en_query": "square baler",
+   "alibaba": "https://www.alibaba.com/trade/search?SearchText=square+baler",
+   "made_in_china": "https://www.made-in-china.com/products-search/hot-china-products/square_baler.html"
+  },
+  "source_url": ""
  }
 ]
