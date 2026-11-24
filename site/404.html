@@ -7,7 +7,7 @@
   var m=p.match(/\/p(\d+)-/);                      // старые ссылки на товары Сату: /p123456-nazvanie.html
   var g={'9494028':'metal','9667698':'power','9675113':'fish','9682295':'air','9682296':'agro'};
   var gm=p.match(/\/g(\d+)-/);                     // старые группы Сату: /g9494028-...
-  if(m) to='/#p-'+m[1];
+  if(m) to='/p/'+m[1];
   else if(gm&&g[gm[1]]) to='/#cat-'+g[gm[1]];
   else if(/product_list|\/g\d+/.test(p)) to='/#catalog';
   else if(/contacts|delivery|about|info/.test(p)) to='/#contact';

@@ -100,10 +100,18 @@ def main():
     data = json.dumps(products, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     html = re.sub(r"/\*DATA\*/.*?/\*END\*/", lambda m: data, tpl, count=1, flags=re.S)
     html = html.replace("</head>", tracking_html() + "</head>", 1)
+    html = html.replace("277 позиций", f"{len(products)} позиций")
+    # отдельные страницы товаров и направлений для поисковиков + sitemap.xml
+    import pages
+    groups = json.loads(re.search(r"const GROUPS=(\[.*?\])\.concat", tpl).group(1)) + [["other", "Другое оборудование"]]
+    n_urls, dirs = pages.build(products, groups, ROOT / "site", tracking_html(),
+                                 (re.search(r'<a class="logo" href="#top">(<svg.*?</svg>)', tpl, re.S) or [None, None])[1])
+    html = html.replace("<!--DIRS-->", '<nav class="fdirs" aria-label="Направления">' + dirs + "</nav>", 1)
     out = ROOT / "site" / "index.html"
     out.parent.mkdir(exist_ok=True)
     out.write_text(html, "utf8")
     new = [p for p in products if p["id"] not in curated]
+    print(f"Страниц в sitemap: {n_urls}")
     print(f"Собрано: {len(products)} товаров, новых без ручной группы: {len(new)}")
 
 
