@@ -85,6 +85,16 @@ def main():
             products.append({"id": c["id"], "cat": c["cat"], "name": c["name"], "price": c["price"],
                              "images": [f"https://images.satu.kz/{c['img']}_w640_h640_p.jpg"] if c["img"] else [],
                              "desc": "", "specs": []})
+    # товары, добавленные напрямую на сайт (без Сату): data/extra.json
+    ep = ROOT / "data" / "extra.json"
+    if ep.exists():
+        known = {p["id"] for p in products}
+        for e in json.loads(ep.read_text("utf8")):
+            if e.get("id") in hidden or e.get("id") in known:
+                continue
+            products.append({"id": e["id"], "cat": e.get("cat") or guess_group(e["name"]), "name": e["name"],
+                             "price": str(e.get("price", "")), "images": e.get("images", []),
+                             "desc": e.get("desc", ""), "specs": e.get("specs", [])})
     products.sort(key=lambda p: (p["price"] == "", p["cat"]))
     tpl = (ROOT / "template.html").read_text("utf8")
     data = json.dumps(products, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
