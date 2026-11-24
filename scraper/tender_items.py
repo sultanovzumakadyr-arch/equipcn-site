@@ -275,13 +275,30 @@ def desc(name, purpose):
             "и документами — в коммерческом предложении. Доставка по Казахстану и странам СНГ.")
 
 
+def load_sources():
+    """data/tender_sources.txt: найденные объявления Made-in-China (фото + точная ссылка)."""
+    sp = ROOT / "data" / "tender_sources.txt"
+    res = {}
+    if not sp.exists(): return res
+    for line in sp.read_text("utf8").splitlines():
+        if not line or line.startswith("#"): continue
+        pid, sup, code, keys, pr = (line.split("|") + [""] * 5)[:5]
+        res[pid] = {"source_url": f"https://{sup}.en.made-in-china.com/product/{code}/China-equipment.html" if sup and code else "",
+                    "images": [f"https://image.made-in-china.com/2f0j00{k}/equipcn.jpg" for k in keys.split(",") if k],
+                    "source_price_usd": pr}
+    return res
+
+
 def main():
+    srcs = load_sources()
     out = []
     for i, (cat, name, fob, purpose, specs) in enumerate(ITEMS, 1):
         out.append({"id": f"x{1000 + i}", "cat": cat, "name": name, "price": f"~{price(fob)}",
                     "images": [], "desc": desc(name, purpose), "specs": [list(s) for s in specs] + [["Страна производства", "Китай"]],
                     "fob_usd": fob, "rate": RATE, "markup": MARKUP, "source": "tender",
-                    "src": sources(name), "source_url": ""})
+                    "src": sources(name), "source_url": "", "source_price_usd": ""})
+        s = srcs.get(out[-1]["id"])
+        if s: out[-1].update(s)
     ep = ROOT / "data" / "extra.json"
     old = {e["id"]: e for e in json.loads(ep.read_text("utf8"))} if ep.exists() else {}
     for e in out:
