@@ -39,21 +39,52 @@ def clean_name(n):
     return n[:1].upper() + n[1:]
 
 
+def to_webp(products):
+    """Фото товаров в WebP (меньше вес → быстрее загрузка). Исходные JPG остаются."""
+    try:
+        from PIL import Image
+    except ImportError:
+        return
+    for p in products:
+        out = []
+        for u in p.get("images") or []:
+            if u.startswith("img/") and u.lower().endswith((".jpg", ".jpeg", ".png")):
+                src = ROOT / "site" / u
+                dst = src.with_suffix(".webp")
+                if src.exists() and not dst.exists():
+                    try:
+                        im = Image.open(src).convert("RGB")
+                        im.thumbnail((1000, 1000))
+                        im.save(dst, "WEBP", quality=80, method=5)
+                    except Exception:
+                        pass
+                if dst.exists():
+                    u = "img/" + dst.name
+            out.append(u)
+        p["images"] = out
+
+
 def tracking_html():
+    """Настройки заявок и аналитики из data/tracking.json → <head> каждой страницы.
+    GA4 и Google Ads ставятся напрямую (gtag), GTM — по желанию. Если задан GTM, события
+    отправляются только в dataLayer, чтобы не было дублей; GA4 тогда настраивается внутри GTM."""
     tp = ROOT / "data" / "tracking.json"
-    if not tp.exists():
-        return ""
-    t = json.loads(tp.read_text("utf8"))
-    ads, ga = t.get("google_ads_id", "").strip(), t.get("ga4_id", "").strip()
-    if not ads and not ga:
-        return ""
-    first = ads or ga
-    conv = {k: v for k, v in (t.get("conversions") or {}).items() if v}
-    cfg = "".join(f"gtag('config','{i}');" for i in (ads, ga) if i)
-    return ("<script async src=\"https://www.googletagmanager.com/gtag/js?id=" + first + "\"></script>"
-            "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
-            "gtag('js',new Date());" + cfg +
-            "window.EQ_CONV=" + json.dumps({k: f"{ads}/{v}" for k, v in conv.items()} if ads else {}) + ";</script>")
+    t = json.loads(tp.read_text("utf8")) if tp.exists() else {}
+    ads, ga, gtm = (t.get(k, "").strip() for k in ("google_ads_id", "ga4_id", "gtm_id"))
+    conv = {k: f"{ads}/{v}" for k, v in (t.get("conversions") or {}).items() if v and ads}
+    eq = {"endpoint": t.get("lead_endpoint", "").strip(), "conv": conv, "gtm": bool(gtm), "wa": "77787586354"}
+    out = "<script>window.EQ_CFG=" + json.dumps(eq, ensure_ascii=False) + ";</script>"
+    if gtm:
+        out += ("<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});"
+                "var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;"
+                "j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})"
+                f"(window,document,'script','dataLayer','{gtm}');</script>")
+    tags = [i for i in (ads, "" if gtm else ga) if i]
+    if tags:
+        out += ("<script async src=\"https://www.googletagmanager.com/gtag/js?id=" + tags[0] + "\"></script>"
+                "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());"
+                + "".join(f"gtag('config','{i}');" for i in tags) + "</script>")
+    return out
 
 
 def main():
@@ -96,6 +127,7 @@ def main():
                              "price": str(e.get("price", "")), "images": e.get("images", []),
                              "desc": e.get("desc", ""), "specs": e.get("specs", [])})
     products.sort(key=lambda p: (p["price"] == "", p["cat"]))
+    to_webp(products)
     tpl = (ROOT / "template.html").read_text("utf8")
     data = json.dumps(products, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     html = re.sub(r"/\*DATA\*/.*?/\*END\*/", lambda m: data, tpl, count=1, flags=re.S)
@@ -104,9 +136,10 @@ def main():
     # отдельные страницы товаров и направлений для поисковиков + sitemap.xml
     import pages
     groups = json.loads(re.search(r"const GROUPS=(\[.*?\])\.concat", tpl).group(1)) + [["other", "Другое оборудование"]]
-    n_urls, dirs = pages.build(products, groups, ROOT / "site", tracking_html(),
+    n_urls, dirs, lands = pages.build(products, groups, ROOT / "site", tracking_html(),
                                  (re.search(r'<a class="logo" href="#top">(<svg.*?</svg>)', tpl, re.S) or [None, None])[1])
-    html = html.replace("<!--DIRS-->", '<nav class="fdirs" aria-label="Направления">' + dirs + "</nav>", 1)
+    html = html.replace("<!--DIRS-->", '<nav class="fdirs" aria-label="Направления">' + dirs + "</nav>"
+                        '<nav class="fdirs" aria-label="Подбор оборудования">' + lands + '<a href="/privacy">Политика обработки данных</a></nav>', 1)
     out = ROOT / "site" / "index.html"
     out.parent.mkdir(exist_ok=True)
     out.write_text(html, "utf8")

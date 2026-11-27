@@ -14,6 +14,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Equipcn","alternateName":["Eqiupcn","Equipcn Group","Эквипсиэн"],"url":"https://equipcngroup.com/","logo":"https://equipcngroup.com/og.jpg","telephone":"+7 778 758 63 54","address":{"@type":"PostalAddress","streetAddress":"ул. Жандосова, 4В","addressLocality":"Алматы","addressCountry":"KZ"},"sameAs":["https://www.tiktok.com/@eqiupcn"],"description":"Промышленное оборудование из Китая под ключ. Доставка по Казахстану и СНГ."}</script>
 <link rel="canonical" href="https://equipcngroup.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/lead.css">
 <style>
 /* Вариант 3 «Премиум»: глубокий синий на всю страницу, стеклянные карточки, крупный вращающийся логотип-шестерёнка как главный образ */
 :root{--bg:#f5f8fd;--bg2:#eaf1fc;--navy:#0B3D91;--accent:#2F80ED;--light:#1F5FC9;--logo:#1F5FC9;--text:#0f1d33;--muted:#5b6b82;--glass:#ffffff;--edge:#dbe4f1;
@@ -34,7 +35,8 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:2
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none}.logo b{font-family:var(--display);font-weight:800;font-size:1.65rem;letter-spacing:-.04em;color:#111}
 .nav{display:flex;gap:6px;padding:6px;border:1px solid var(--edge);border-radius:999px;background:var(--glass);backdrop-filter:blur(8px)}
 .nav a{text-decoration:none;font-size:.93rem;font-weight:500;padding:8px 16px;border-radius:999px;color:var(--muted)}.nav a:hover{background:var(--bg2);color:var(--navy)}
-@media(max-width:980px){.nav{display:none}}
+@media(max-width:1240px){.nav{display:none}}
+.nav a,.hdr-cta .btn{white-space:nowrap}
 /* hero */
 .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center;padding-top:clamp(30px,6vw,70px);padding-bottom:clamp(40px,6vw,80px)}
 .hero h1{font-size:clamp(2.5rem,6vw,5rem);font-weight:800;margin:22px 0 22px}
@@ -213,33 +215,42 @@ dialog#pd>.x{position:sticky;float:right;top:14px;margin:14px 14px -54px 0;width
 @media(max-width:560px){dialog#pd{width:100%;max-width:100%;max-height:100dvh;height:100dvh;border-radius:0;border:0}.pd .info{padding:20px}.pdx{padding:4px 20px 90px}.pd .art{min-height:240px}}
 .tt{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;color:var(--navy);border:1px solid var(--edge);border-radius:999px;padding:8px 14px;background:#fff}.tt:hover{border-color:var(--accent)}
 .fdirs{display:flex;flex-wrap:wrap;gap:6px 14px;width:100%;margin:0 0 14px;font-size:.85rem}.fdirs a{color:var(--muted);text-decoration:none}.fdirs a:hover{color:var(--logo)}
+.hero-ben{list-style:none;padding:0;margin:0 0 26px;display:grid;gap:9px}
+.hero-ben li{position:relative;padding-left:30px;font-weight:500}
+.hero-ben li:before{content:"";position:absolute;left:0;top:3px;width:20px;height:20px;border-radius:50%;background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.5l3 3 6-7' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+.hero h1{font-size:clamp(2rem,4.6vw,3.6rem)}
+.hero-form{width:100%;max-width:440px;justify-self:end}
+.hdr-cta{display:flex;gap:8px}
+.nf{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:28px;background:#fff;border:1px dashed #b9cbe6;border-radius:20px;padding:20px 24px}
+.nf p{margin:4px 0 0;color:var(--muted)}
+.pd .lf{box-shadow:none;padding:16px;margin-top:6px}
+@media(max-width:900px){.hero-form{max-width:none;justify-self:stretch}.hdr-calc{display:none}}
+@media(max-width:560px){.hdr-tel{display:none}}
+@media(max-width:900px){.hero .ctas,.hero-ben{display:none}.hero h1{font-size:1.9rem;margin:12px 0}.hero .lead{margin-bottom:6px}.hero .wrap{gap:16px;padding-top:18px}}
 </style></head><body>
 <header><div class="wrap">
   <a class="logo" href="#top"><svg class="" width="38" height="38" viewBox="0 0 48 48" aria-hidden="true"><g fill="var(--logo)" transform="rotate(22.5 24 24)"><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(0 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(45 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(90 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(135 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(180 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(225 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(270 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(315 24 24)"/><circle cx="24" cy="24" r="16.5"/></g><circle cx="24" cy="24" r="9.6" fill="#fff"/><path d="M19.6 24.6l3.4 3.4 6.6-7.6" fill="none" stroke="var(--logo)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><b>equipcn</b></a>
   <nav class="nav"><a href="#directions">Направления</a><a href="#catalog">Каталог</a><a href="#how">Как работаем</a><a href="#faq">Вопросы</a><a href="#contact">Контакты</a></nav>
-  <a class="btn btn-line" href="tel:+77787586354" style="padding:11px 18px">+7 778 758-63-54</a>
+  <div class="hdr-cta"><a class="btn btn-line hdr-tel" href="tel:+77787586354" style="padding:11px 18px">+7 778 758-63-54</a><a class="btn btn-main hdr-calc" href="#lead" style="padding:11px 18px">Получить расчёт</a></div>
 </div></header>
 <main id="top">
-<div class="hero"><div class="wrap">
+<div class="hero" data-place="hero"><div class="wrap">
   <div>
     <span class="eyebrow">Китай → Казахстан и СНГ</span>
-    <h1>Промышленное оборудование <span class="grad">с заводов Китая под ключ</span></h1>
-    <p class="lead"><span data-cnt="all" data-fmt="pos">277 позиций</span> в 20 направлениях — лазерные станки, мебельные линии, бетонные заводы, орошение, мясные и молочные цеха, холодильные склады, фермы и рыбоводство. Не нашли нужное — подберём оборудование под вашу задачу, под ключ. Проверяем качество и доставляем по Казахстану и СНГ.</p>
-    <div class="ctas"><a class="btn btn-main" href="#contact">Получить расчёт</a><a class="btn btn-line" href="#catalog">Смотреть каталог</a></div>
+    <h1>Оборудование напрямую с заводов Китая <span class="grad">с доставкой в Казахстан</span></h1>
+    <p class="lead">Подберём оборудование под ваш бюджет, проверим производителя, организуем закупку и доставку до вашего объекта.</p>
+    <ul class="hero-ben">
+      <li>Прямые поставки от производителей</li><li>Работа по официальному договору</li><li>Проверка оборудования перед отправкой</li><li>Сопровождение закупки и логистики</li><li>Индивидуальный подбор оборудования</li>
+    </ul>
+    <div class="ctas"><a class="btn btn-main" href="#lead">Получить расчёт стоимости</a><a class="btn btn-line" href="#catalog">Смотреть каталог</a></div>
   </div>
-  <div class="orbit" aria-hidden="true">
-    <div class="ring"></div><div class="ring r2"></div>
-    <div class="core"><svg viewBox="0 0 48 48"><defs><linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5a9cf3"/><stop offset="1" stop-color="#1F5FC9"/></linearGradient></defs>
-      <g class="teeth"><g fill="url(#gg)" transform="rotate(22.5 24 24)"><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(0 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(45 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(90 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(135 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(180 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(225 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(270 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(315 24 24)"/><circle cx="24" cy="24" r="16.5"/></g></g>
-      <circle cx="24" cy="24" r="9.6" fill="#fff"/><path d="M19.6 24.6l3.4 3.4 6.6-7.6" fill="none" stroke="#1F5FC9" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-    <button type="button" class="chip c1"><i></i><span class="cn"></span> <small></small></button><button type="button" class="chip c2"><i></i><span class="cn"></span> <small></small></button><button type="button" class="chip c3"><i></i><span class="cn"></span> <small></small></button><button type="button" class="chip c4"><i></i><span class="cn"></span> <small></small></button><button type="button" class="chip c5"><i></i><span class="cn"></span> <small></small></button><button type="button" class="chip c6"><i></i><span class="cn"></span> <small></small></button>
-  </div>
+  <div id="lead" class="hero-form" data-leadform data-title="Узнайте стоимость с доставкой"></div>
 </div></div>
 <div class="wrap"><div class="facts">
-  <div class="fact"><b data-cnt="all" data-fmt="num">277</b><span>позиций в каталоге</span></div>
-  <div class="fact"><b>Под ключ</b><span>подбор оборудования под задачу клиента</span></div>
-  <div class="fact"><b>Напрямую</b><span>с заводов Китая, без посредников</span></div>
-  <div class="fact"><b>СНГ</b><span>доставка в Казахстан и страны СНГ</span></div>
+  <div class="fact"><b data-cnt="all" data-fmt="num">443</b><span>позиций в каталоге</span></div>
+  <div class="fact"><b>Договор</b><span>официальная работа и прозрачные условия</span></div>
+  <div class="fact"><b>Проверка</b><span>оборудования перед отправкой</span></div>
+  <div class="fact"><b>Под ключ</b><span>закупка и доставка в Казахстан и СНГ</span></div>
 </div></div>
 
 <section class="block" id="directions"><div class="wrap">
@@ -255,6 +266,7 @@ dialog#pd>.x{position:sticky;float:right;top:14px;margin:14px 14px -54px 0;width
   </div>
   <div id="catView"></div>
   <p id="empty">Ничего не нашлось. <a href="#contact">Оставьте заявку</a> — подберём под вас.</p>
+  <div class="nf"><div><b>Не нашли нужное оборудование?</b><p>Отправьте нам фото или техническое задание — подберём подходящий вариант в Китае.</p></div><a class="btn btn-main" href="#lead2">Отправить фото или ТЗ</a></div>
 </div></section>
 
 <section class="block" style="padding-top:0"><div class="wrap">
@@ -262,9 +274,14 @@ dialog#pd>.x{position:sticky;float:right;top:14px;margin:14px 14px -54px 0;width
   <div class="why"><div class="wi"><span class="num">01</span><b>Проверенные заводы</b><p>Работаем только с производителями, которых проверили сами.</p></div><div class="wi"><span class="num">02</span><b>Без лишних наценок</b><p>Покупаем напрямую у завода, без цепочки посредников.</p></div><div class="wi"><span class="num">03</span><b>Контроль качества</b><p>Проверяем оборудование на каждом этапе — до отгрузки.</p></div><div class="wi"><span class="num">04</span><b>Широкий выбор</b><p>От одного станка до полной производственной линии.</p></div><div class="wi"><span class="num">05</span><b>Быстрая доставка</b><p>Логистика из Китая до вашего объекта в Казахстане и странах СНГ.</p></div><div class="wi"><span class="num">06</span><b>Долгосрочно</b><p>Строим партнёрство, а не разовые сделки.</p></div></div>
 </div></section>
 
+<section class="block" id="trust" hidden style="padding-top:0"><div class="wrap">
+  <div class="head"><div><span class="eyebrow">Доверие</span><h2>Проекты, отзывы и условия работы</h2></div></div>
+  <div class="tr-body"></div>
+</div></section>
+
 <section class="block" id="how" style="padding-top:0"><div class="wrap tl">
-  <div class="stick"><span class="eyebrow">Как мы работаем</span><h2>Пять шагов до запуска</h2><p>Вы описываете задачу — остальное берём на себя.</p><a class="btn btn-main" href="#contact">Начать с заявки</a></div>
-  <div class="tsteps"><div class="ts"><div class="n">1</div><div><b>Заявка</b><p>Расскажите задачу или пришлите модель.</p></div></div><div class="ts"><div class="n">2</div><div><b>Подбор и КП</b><p>Находим варианты у заводов и считаем цену.</p></div></div><div class="ts"><div class="n">3</div><div><b>Договор</b><p>Фиксируем комплектацию, цену и сроки.</p></div></div><div class="ts"><div class="n">4</div><div><b>Контроль</b><p>Следим за производством и проверяем качество.</p></div></div><div class="ts"><div class="n">5</div><div><b>Доставка</b><p>Привозим оборудование в Казахстан и страны СНГ.</p></div></div></div>
+  <div class="stick"><span class="eyebrow">Как мы работаем</span><h2>Шесть шагов от заявки до поставки</h2><p>Вы описываете задачу — остальное берём на себя.</p><a class="btn btn-main" href="#contact">Начать с заявки</a></div>
+  <div class="tsteps"><div class="ts"><div class="n">1</div><div><b>Заявка</b><p>Вы оставляете заявку: что нужно, фото или ТЗ.</p></div></div><div class="ts"><div class="n">2</div><div><b>Уточняем ТЗ</b><p>Созваниваемся и уточняем задачу, мощность, бюджет.</p></div></div><div class="ts"><div class="n">3</div><div><b>Подбор заводов</b><p>Подбираем производителей в Китае под ваши требования.</p></div></div><div class="ts"><div class="n">4</div><div><b>Коммерческое предложение</b><p>Присылаем КП со стоимостью и доставкой.</p></div></div><div class="ts"><div class="n">5</div><div><b>Договор и закупка</b><p>Заключаем договор и организуем закупку.</p></div></div><div class="ts"><div class="n">6</div><div><b>Проверка и доставка</b><p>Проверяем оборудование и доставляем до объекта.</p></div></div></div>
 </div></section>
 
 <section class="block" id="faq" style="padding-top:0"><div class="wrap">
@@ -273,17 +290,9 @@ dialog#pd>.x{position:sticky;float:right;top:14px;margin:14px 14px -54px 0;width
 </div></section>
 
 <section class="block" id="contact" style="padding-top:0"><div class="wrap"><div class="contact">
-  <div><span class="eyebrow">Заявка</span><h2>Получите расчёт стоимости</h2><p class="sub">Менеджер свяжется в рабочее время и подберёт оборудование под ваш бюджет.</p>
+  <div><span class="eyebrow">Заявка</span><h2>Получите расчёт стоимости</h2><p class="sub">Опишите оборудование и оставьте телефон — менеджер свяжется в рабочее время и подготовит расчёт с доставкой.</p>
     <div class="cl"><div><span>Телефон</span><a href="tel:+77787586354">+7 (778) 758-63-54</a></div><div><span>Менеджер</span>Улугбек, руководитель отдела продаж</div><div><span>Адрес</span>Алматы, ул. Жандосова, 4В</div><div><span>Часы</span>Пн–Пт 10:00–18:00</div><div><span>TikTok</span><a href="https://www.tiktok.com/@eqiupcn" target="_blank" rel="noopener">@eqiupcn</a></div></div></div>
-  <form id="reqForm" novalidate>
-  <label for="f-name">Ваше имя<input id="f-name" autocomplete="name" placeholder="Например, Айдар"></label>
-  <label for="f-phone">Телефон<input id="f-phone" type="tel" autocomplete="tel" placeholder="+7 7__ ___ __ __"></label>
-  <label for="f-cat">Направление<select id="f-cat"><option>Металлообработка и лазеры</option><option>Деревообработка и мебель</option><option>Стройматериалы и бетон</option><option>Сельское хозяйство и корма</option><option>Пищевое производство</option><option>Пластик и переработка</option><option>Компрессоры и энергетика</option><option>Упаковка, бумага, печать</option><option>Рыбоводство и рыбопереработка</option><option>Стекло и окна</option><option>Автосервис и клининг</option><option>Горнодобыча и дробление</option><option>Климат и вентиляция</option><option>Электроника и SMT</option><option>Другое</option></select></label>
-  <label for="f-msg">Что нужно<textarea id="f-msg" placeholder="Модель, мощность, производительность или просто задача"></textarea></label>
-  <button class="btn btn-main" type="submit">Отправить заявку в WhatsApp</button>
-  <div id="formOut" role="status"></div>
-  <span class="form-note">Заявка откроется в WhatsApp с готовым текстом — останется нажать «Отправить».</span>
-</form>
+  <div id="lead2" data-place="contact" data-leadform data-title="Получить стоимость с доставкой"></div>
 </div></div></section>
 </main>
 <footer><div class="wrap"><a class="logo" href="#top"><svg class="" width="28" height="28" viewBox="0 0 48 48" aria-hidden="true"><g fill="var(--logo)" transform="rotate(22.5 24 24)"><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(0 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(45 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(90 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(135 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(180 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(225 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(270 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(315 24 24)"/><circle cx="24" cy="24" r="16.5"/></g><circle cx="24" cy="24" r="9.6" fill="#fff"/><path d="M19.6 24.6l3.4 3.4 6.6-7.6" fill="none" stroke="var(--logo)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><b style="font-size:1.25rem">equipcn</b></a><!--DIRS--><span>© 2026 · Equipcn (Eqiupcn) · equipcngroup.com · Оборудование из Китая в Казахстан и СНГ</span><a class="tt" href="https://www.tiktok.com/@eqiupcn" target="_blank" rel="noopener" aria-label="Equipcn в TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.7a5.7 5.7 0 1 0 4.9 5.7V9a7.3 7.3 0 0 0 4.3 1.4V7.3a4.3 4.3 0 0 1-3.2-1.5z"/></svg>TikTok @eqiupcn</a></div></footer>
@@ -317,13 +326,6 @@ function setupCatalog(tpl){
   window.searchFor=v=>{q.value=v;cat='all';setCat('all');document.getElementById('catalog').scrollIntoView({behavior:'smooth'});};
 }
 function plural(n){return n%10==1&&n%100!=11?'позиция':(n%10>=2&&n%10<=4&&(n%100<12||n%100>14)?'позиции':'позиций');}
-function setupForm(){
-  const f=document.getElementById('reqForm');if(!f)return;
-  f.addEventListener('submit',e=>{e.preventDefault();const v=id=>document.getElementById(id).value.trim();const out=document.getElementById('formOut');out.style.display='block';
-    if(!v('f-phone')){out.textContent='Укажите телефон, чтобы мы могли вам перезвонить.';document.getElementById('f-phone').focus();return;}
-    const text='Заявка с сайта equipcngroup.com\nИмя: '+(v('f-name')||'—')+'\nТелефон: '+v('f-phone')+'\nНаправление: '+v('f-cat')+'\nЗадача: '+(v('f-msg')||'—');
-    out.innerHTML='Заявка готова. <a target="_blank" rel="noopener" href="'+WA+encodeURIComponent(text)+'">Открыть WhatsApp и отправить →</a>';});
-}
 
 const card=p=>`<button type="button" class="prod" data-id="${p.id}"><div class="art">${ICONS[p.cat]}${imgHTML(p)}<span class="tag">Под заказ</span></div><span class="grp">${gname(p.cat)}</span><h3>${p.name}</h3><div class="row"><span class="price">${priceHTML(p)}</span><span class="ask" aria-hidden="true">→</span></div></button>`;
 (function(){
@@ -342,7 +344,7 @@ const card=p=>`<button type="button" class="prod" data-id="${p.id}"><div class="
     n=PRODUCTS.length;
     html=GROUPS.filter(g=>COUNTS[g[0]]).map(([k,v])=>{const l=PRODUCTS.filter(p=>p.cat===k);return `<section class="gsec" id="g-${k}">${head(k,v,true)}<div class="prods prow">${l.slice(0,6).map(card).join('')}<button type="button" class="all more-card" data-k="${k}">Все ${COUNTS[k]} →</button></div></section>`;}).join('');
   }else{
-    const l=PRODUCTS.filter(p=>p.cat===cat);n=l.length;
+    const l=PRODUCTS.filter(p=>p.cat===cat);n=l.length;if(window.EQ)EQ.ev('view_item_list',{item_list_id:cat,item_list_name:gname(cat)});
     html=`<button type="button" class="back" data-k="all">← Все направления</button><section class="gsec">${head(cat,gname(cat),false)}<div class="prods">${l.map(card).join('')}</div></section>`;
   }
   view.innerHTML=html;empty.style.display=n?'none':'block';found.textContent=n+' '+plural(n);
@@ -363,29 +365,16 @@ const card=p=>`<button type="button" class="prod" data-id="${p.id}"><div class="
   const gal=imgs.length>1?'<div class="gal">'+imgs.map((u,i)=>'<button type="button" data-src="'+u+'"'+(i?'':' class="on"')+'><img referrerpolicy="no-referrer" src="'+u+'" alt=""></button>').join('')+'</div>':'';
   const desc=p.desc?'<div class="desc">'+esc(p.desc).split(/\n{2,}/).map(x=>'<p>'+x.replace(/\n/g,'<br>')+'</p>').join('')+'</div>':'';
   const specs=p.specs&&p.specs.length?'<table class="specs">'+p.specs.map(r=>'<tr><td>'+esc(r[0])+'</td><td>'+esc(r[1])+'</td></tr>').join('')+'</table>':'';
-  dlg.innerHTML=`<button type="button" class="x" aria-label="Закрыть">×</button><div class="pd"><div class="pdl"><div class="art" id="pdArt">${ICONS[p.cat]}${imgHTML(p)}</div>${gal}</div><div class="info"><span class="grp" style="padding:0">${gname(p.cat)}</span><h3>${esc(p.name)}</h3><span class="price">${priceHTML(p)}</span><a class="btn btn-main" target="_blank" rel="noopener" href="${askHref(p)}">Узнать цену в WhatsApp</a><a class="btn btn-line" href="tel:+77787586354">Позвонить: +7 778 758-63-54</a><span style="color:var(--muted);font-size:.85rem">Под заказ · Код товара: ${p.id}</span></div></div>${desc||specs?'<div class="pdx">'+(desc?'<h4>Описание</h4>'+desc:'')+(specs?'<h4>Характеристики</h4>'+specs:'')+'</div>':''}`;
+  dlg.innerHTML=`<button type="button" class="x" aria-label="Закрыть">×</button><div class="pd"><div class="pdl"><div class="art" id="pdArt">${ICONS[p.cat]}${imgHTML(p)}</div>${gal}</div><div class="info"><span class="grp" style="padding:0">${gname(p.cat)}</span><h3>${esc(p.name)}</h3><span class="price">${priceHTML(p)}</span><span style="color:var(--muted);font-size:.85rem">Под заказ · Код товара: ${p.id} · Доставка по Казахстану и СНГ, стоимость доставки — в расчёте</span><div data-place="product-dialog">${window.EQ?EQ.formHTML({title:'Узнать стоимость с доставкой',product:p.name+' (код '+p.id+')',need:'Нужна стоимость с доставкой: '+p.name}):''}</div><a class="btn btn-line" target="_blank" rel="noopener" href="${askHref(p)}">Спросить в WhatsApp</a><a href="/p/${p.id}" style="font-size:.88rem">Открыть страницу товара →</a></div></div>${desc||specs?'<div class="pdx">'+(desc?'<h4>Описание</h4>'+desc:'')+(specs?'<h4>Характеристики</h4>'+specs:'')+'</div>':''}`;
   dlg.querySelectorAll('.gal button').forEach(b=>b.onclick=()=>{dlg.querySelectorAll('.gal button').forEach(x=>x.classList.toggle('on',x===b));const im=dlg.querySelector('#pdArt img');if(im)im.src=b.dataset.src;});
   dlg.querySelector('.x').onclick=()=>dlg.close();
+  if(window.EQ){EQ.bind(dlg);EQ.ev('view_item',{item_id:p.id,item_name:p.name,item_category:gname(p.cat)});}
   if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');};
  dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close();});
 })();
-setupForm();
 
-// отслеживание заявок для Google Ads / Analytics
-(function(){function track(kind,label){try{if(!window.gtag)return;gtag('event',kind,{event_category:'lead',event_label:label||''});const c=(window.EQ_CONV||{})[kind];if(c)gtag('event','conversion',{send_to:c});}catch(e){}}
- document.addEventListener('click',e=>{const a=e.target.closest('a');if(!a)return;const h=a.getAttribute('href')||'';
-  if(h.startsWith('https://wa.me'))track('whatsapp',a.textContent.trim().slice(0,60));else if(h.startsWith('tel:'))track('phone');},true);
- const f=document.getElementById('reqForm');if(f)f.addEventListener('submit',()=>{if(document.getElementById('f-phone').value.trim())track('form');});
-})();
 
-(function(){const SHORT={metal:'Металлообработка',weld:'Сварка',pump:'Мотопомпы',wood:'Деревообработка',build:'Стройматериалы',agro:'Сельское хозяйство',food:'Пищевое производство',irrig:'Орошение',meat:'Мясопереработка',dairy:'Молочка',cold:'Хранение и холод',plast:'Пластик и переработка',power:'Генераторы и компрессоры',pack:'Упаковка и печать',fish:'Рыбоводство',glass:'Стекло и окна',auto:'Автосервис',mine:'Горнодобыча',air:'Климат',elec:'Электроника',other:'Другое'};
- const gs=GROUPS.map(g=>g[0]).filter(k=>COUNTS[k]);const chips=[...document.querySelectorAll('.orbit .chip')];let i=0;
- function fill(){chips.forEach((c,j)=>{const k=gs[(i+j)%gs.length];c.dataset.k=k;c.querySelector('.cn').textContent=SHORT[k]||gname(k);c.querySelector('small').textContent=COUNTS[k];c.setAttribute('aria-label','Открыть: '+gname(k));});}
- fill();chips.forEach(c=>c.addEventListener('click',()=>openGroup(c.dataset.k)));
- const orbit=document.querySelector('.orbit');orbit.removeAttribute('aria-hidden');
- if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
- let paused=false;orbit.addEventListener('mouseenter',()=>paused=true);orbit.addEventListener('mouseleave',()=>paused=false);
- setInterval(()=>{if(paused||document.hidden)return;chips.forEach(c=>c.classList.add('fade'));setTimeout(()=>{i=(i+chips.length)%gs.length;fill();chips.forEach(c=>c.classList.remove('fade'));},450);},3200);
-})();
 document.querySelectorAll('[data-cnt]').forEach(el=>{const k=el.dataset.cnt,n=k==='all'?PRODUCTS.length:(COUNTS[k]||0);el.textContent=el.dataset.fmt==='pos'?n+' '+plural(n):n;});
-</script></body></html>
+</script><div class="mbar"><a class="m1" href="#lead">Получить расчёт</a><a class="m2" href="https://wa.me/77787586354" target="_blank" rel="noopener">WhatsApp</a></div>
+<script defer src="/assets/lead.js"></script>
+</body></html>
