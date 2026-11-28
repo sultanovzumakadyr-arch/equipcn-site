@@ -1,0 +1,13 @@
+{
+  "_help": "lead_endpoint — URL веб-приложения Apps Script (приём заявок). ga4_id — G-XXXX. google_ads_id — AW-XXXX и метки конверсий. gtm_id — GTM-XXXX (по желанию; тогда GA4 настраивается внутри GTM). Пустое значение = выключено.",
+  "lead_endpoint": "",
+  "ga4_id": "",
+  "google_ads_id": "",
+  "gtm_id": "",
+  "conversions": {
+    "form": "",
+    "whatsapp": "",
+    "phone": ""
+  },
+  "_conversions_help": "form — основная конверсия (подтверждённая заявка). whatsapp и phone — только как дополнительные (вторичные) в Google Ads."
+}

@@ -1,0 +1,35 @@
+/* Формы заявки, блок доверия, нижняя панель — общие для всех страниц Equipcn */
+.lf{display:flex;flex-direction:column;gap:12px;background:#fff;border:1px solid var(--edge,#dbe4f1);border-radius:20px;padding:20px;box-shadow:0 18px 40px -24px rgba(11,61,145,.35);text-align:left}
+.lf-t{font:800 1.15rem/1.25 var(--display,system-ui);color:var(--text,#0f1d33)}
+.lf label{display:flex;flex-direction:column;gap:6px;font-size:.88rem;font-weight:600;color:var(--text,#0f1d33)}
+.lf textarea,.lf input[type=tel]{font:inherit;font-weight:400;font-size:16px;border:1px solid var(--edge,#dbe4f1);border-radius:12px;padding:12px 14px;background:#f8fbff;color:var(--text,#0f1d33);width:100%;resize:vertical}
+.lf textarea:focus,.lf input:focus{outline:2px solid var(--accent,#2F80ED);outline-offset:1px;background:#fff}
+.lf .lf-file{flex-direction:row;align-items:center;cursor:pointer;font-weight:500;color:var(--logo,#1F5FC9);border:1px dashed #b9cbe6;border-radius:12px;padding:10px 14px;background:#f8fbff}
+.lf .lf-file input{position:absolute;width:1px;height:1px;opacity:0}
+.lf .lf-file small{color:var(--muted,#5b6b82);font-weight:400}
+.lf-hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0}
+.lf .lf-b{width:100%;min-height:52px;font-size:1rem}
+.lf .lf-b:disabled{opacity:.7;cursor:wait}
+.lf-out{font-size:.9rem;display:none}.lf-out:not(:empty){display:block}.lf-out.err{color:#b42318}
+.lf-out .btn{margin-top:8px;width:100%}
+.lf-note{margin:0;font-size:.78rem;color:var(--muted,#5b6b82)}.lf-note a{color:inherit}
+.lf-ok{text-align:center;padding:10px 4px}.lf-ok b{display:block;font:800 1.15rem var(--display,system-ui);color:#067647;margin-bottom:6px}
+.lf-ok p{margin:0 0 14px;color:var(--muted,#5b6b82)}.lf-ok .btn{width:100%}
+/* блок доверия */
+#trust h3{font:800 1.2rem var(--display,system-ui);margin:26px 0 12px}
+.tr-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.tr-c{background:#fff;border:1px solid var(--edge,#dbe4f1);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:6px;color:var(--text,#0f1d33);text-decoration:none}
+.tr-c img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:12px;margin-bottom:4px}
+.tr-team .tr-c img{aspect-ratio:1}.tr-c small{color:var(--muted,#5b6b82)}.tr-c p{margin:0;font-size:.93rem}
+.tr-v{flex-direction:row;align-items:center;font-size:1.1rem}
+.tr-req{border-collapse:collapse;width:100%;max-width:720px;background:#fff;border-radius:14px;overflow:hidden}
+.tr-req td{padding:9px 14px;border-bottom:1px solid var(--edge,#dbe4f1)}.tr-req td:first-child{color:var(--muted,#5b6b82);width:40%}
+/* нижняя панель на телефоне */
+.mbar{display:none}
+@media(max-width:820px){
+  .mbar{display:flex;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--edge,#dbe4f1)}
+  .mbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;min-height:48px;border-radius:14px;font-weight:700;text-decoration:none;font-size:.98rem}
+  .mbar .m1{background:var(--accent,#2F80ED);color:#fff}.mbar .m2{background:#25D366;color:#fff;flex:0 0 44%}
+  body{padding-bottom:76px}
+  a.wa{display:none!important}
+}

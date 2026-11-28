@@ -49,7 +49,7 @@
     var id = 'lf' + Math.random().toString(36).slice(2, 7);
     return '<form class="lf" data-lead novalidate>' +
       (o.title ? '<div class="lf-t">' + o.title + '</div>' : '') +
-      '<label for="' + id + 'n">Какое оборудование вам необходимо?<textarea id="' + id + 'n" name="need" rows="2" maxlength="2000" placeholder="Например: линия газоблоков 100 м³/сутки или ссылка/модель">' + (o.need ? esc(o.need) : '') + '</textarea></label>' +
+      '<label for="' + id + 'n">Какое оборудование вам необходимо?<textarea id="' + id + 'n" name="need" rows="2" maxlength="2000" placeholder="' + esc(o.ph || 'Например: линия газоблоков 100 м³/сутки или ссылка/модель') + '">' + (o.need ? esc(o.need) : '') + '</textarea></label>' +
       '<label for="' + id + 'p">Номер телефона<input id="' + id + 'p" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 7__ ___ __ __" required></label>' +
       '<label class="lf-file" for="' + id + 'f"><input id="' + id + 'f" name="file" type="file" accept="image/*,.pdf,.doc,.docx,.xls,.xlsx,.txt"><span>📎 Прикрепить фото или ТЗ <small>(необязательно, до 10 МБ)</small></span></label>' +
       '<input type="hidden" name="product" value="' + esc(o.product || '') + '">' +
@@ -179,7 +179,7 @@
 
   function ready() {
     document.querySelectorAll('[data-leadform]').forEach(function (el) {
-      el.innerHTML = FORM_HTML({title: el.getAttribute('data-title') || '', need: el.getAttribute('data-need') || '', product: el.getAttribute('data-product') || ''});
+      el.innerHTML = FORM_HTML({title: el.getAttribute('data-title') || '', need: el.getAttribute('data-need') || '', ph: el.getAttribute('data-ph') || '', product: el.getAttribute('data-product') || ''});
     });
     bindAll();
     trust();
