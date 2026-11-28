@@ -11,6 +11,7 @@ BRAND = "Equipcn"
 WA_NUM = "8618811309532"   # WhatsApp
 TEL = "77082083447"          # телефон для звонков
 PHONE = "+7 708 208-34-47"
+EMAIL = "zhuma675@gmail.com"
 CNY_PER_USD = 6.68      # ориентир ноябрь 2026
 KZT_PER_USD = 458.28    # НБ РК, 25.11.2026
 RATE_NOTE = "курс 1 $ = 458 ₸"
@@ -215,7 +216,7 @@ def header(r):
 
 def footer(r):
     links = "".join(f'<a href="{r}seriya/{s["slug"]}.html">{e(s["name"])}</a>' for s in SERIES)
-    return f"""<footer><div class="wrap"><b style="color:#fff;font-family:var(--display);font-size:1.2rem">{BRAND}</b> — лазерные станки для резки труб с завода в Китае. Алматы, ул. Жандосова, 4В · <a href="tel:+{TEL}">{PHONE}</a> · Пн–Пт 10:00–18:00
+    return f"""<footer><div class="wrap"><b style="color:#fff;font-family:var(--display);font-size:1.2rem">{BRAND}</b> — лазерные станки для резки труб с завода в Китае. Алматы, ул. Жандосова, 4В · <a href="tel:+{TEL}">{PHONE}</a> · <a href="mailto:{EMAIL}">{EMAIL}</a> · Пн–Пт 10:00–18:00
 <div class="fl">{links}<a href="https://equipcngroup.com/">Всё оборудование Equipcn</a><a href="https://equipcngroup.com/privacy">Политика обработки данных</a></div>
 <div>Цены на сайте — ориентир на заводе в Китае ({RATE_NOTE}), без доставки в Казахстан и таможенных платежей. Не являются публичной офертой.</div></div></footer>
 <div class="mbar"><a class="m1" href="#lead">Получить расчёт</a><a class="m2" href="https://wa.me/{WA_NUM}" target="_blank" rel="noopener">WhatsApp</a></div>
@@ -236,7 +237,7 @@ def card(s, r):
 
 def lead_box(title, text, place):
     return (f'<section class="blk" id="zayavka" data-place="{place}"><div class="wrap"><div class="lead-box"><div><span class="eyebrow">Заявка</span><h2>{e(title)}</h2><p>{e(text)}</p>'
-            f'<div class="cl"><div><span>Телефон</span><a href="tel:+{TEL}">{PHONE}</a></div><div><span>WhatsApp</span><a href="https://wa.me/{WA_NUM}" target="_blank" rel="noopener">+86 188 1130 9532</a></div><div><span>Адрес</span>Алматы, ул. Жандосова, 4В</div><div><span>Часы работы</span>Пн–Пт 10:00–18:00</div></div></div>'
+            f'<div class="cl"><div><span>Телефон</span><a href="tel:+{TEL}">{PHONE}</a></div><div><span>WhatsApp</span><a href="https://wa.me/{WA_NUM}" target="_blank" rel="noopener">+86 188 1130 9532</a></div><div><span>Почта</span><a href="mailto:{EMAIL}">{EMAIL}</a></div><div><span>Адрес</span>Алматы, ул. Жандосова, 4В</div><div><span>Часы работы</span>Пн–Пт 10:00–18:00</div></div></div>'
             f'<div data-leadform data-ph="Например: круглая труба ⌀60, стенка 3 мм, нержавейка" data-title="Получить стоимость с доставкой"></div></div></div></section>')
 
 
