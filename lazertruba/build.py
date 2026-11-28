@@ -118,16 +118,16 @@ header.top .wrap{display:flex;align-items:center;justify-content:space-between;g
 .logo small{display:block;font:500 .7rem var(--body);color:var(--muted);letter-spacing:.02em}
 nav.mn{display:flex;gap:22px}nav.mn a{color:var(--graphite);text-decoration:none;font-weight:500;font-size:.95rem}
 .hcta{display:flex;gap:8px}.hcta .btn{padding:10px 16px;font-size:.92rem;white-space:nowrap}
-.hero{background:radial-gradient(1200px 500px at 80% -10%,#1c437f 0,transparent 60%),linear-gradient(160deg,var(--navy),#0e2748);color:#fff}
-.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;padding-top:48px;padding-bottom:56px}
+.hero{position:relative;overflow:hidden;background:#07142a url(media/v/hero-bg.jpg) center/cover;color:#fff}.hero:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(7,20,42,.92) 0%,rgba(7,20,42,.7) 42%,rgba(7,20,42,.15) 100%)}.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}.hero .wrap{position:relative;z-index:2}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;padding-top:64px;padding-bottom:84px}
 .eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#9cc3fa}
 .hero h1{font-size:clamp(2rem,4.4vw,3.3rem);font-weight:800;margin:14px 0}
-.hero .sub{color:#c9d6ea;font-size:1.08rem;margin:0 0 18px}
+.hero .sub{color:#ffb27a;font-size:1.15rem;font-weight:600;margin:0 0 20px}
 .ben{list-style:none;padding:0;margin:0 0 24px;display:grid;gap:8px}
 .ben li{position:relative;padding-left:28px}.ben li:before{content:"✓";position:absolute;left:0;top:0;width:20px;height:20px;border-radius:50%;background:var(--accent);color:#fff;font-size:.75rem;display:grid;place-items:center;font-weight:800}
 .hero .ctas{display:flex;gap:10px;flex-wrap:wrap}.hero .btn-line{background:transparent;color:#fff;border-color:rgba(255,255,255,.35)}
 .hero-media{position:relative}.hero-media video{border-radius:18px;width:100%;aspect-ratio:9/12;object-fit:cover;box-shadow:0 30px 60px -30px #000}
-.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--edge);border:1px solid var(--edge);border-radius:18px;overflow:hidden;margin-top:-28px;position:relative}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--edge);border:1px solid var(--edge);border-radius:18px;overflow:hidden;margin-top:-28px;position:relative;z-index:3}
 .facts div{background:#fff;padding:18px 20px}.facts b{display:block;font:800 1.3rem var(--display);color:var(--navy)}.facts span{color:var(--muted);font-size:.9rem}
 section.blk{padding:64px 0}.blk .lead{color:var(--muted);max-width:760px;margin:0 0 26px}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -170,7 +170,7 @@ table.kv{width:100%;border-collapse:collapse}table.kv td{padding:8px 0;border-bo
 footer{background:var(--graphite);color:#c4cad3;padding:36px 0;margin-top:40px;font-size:.92rem}footer a{color:#fff}
 footer .fl{display:flex;flex-wrap:wrap;gap:8px 18px;margin:12px 0}
 @media(max-width:980px){nav.mn{display:none}.hero .wrap{grid-template-columns:1fr}.hero-media{display:none}.cards{grid-template-columns:1fr 1fr}.vids{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr 1fr}.lead-box,.sp{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}}
-@media(max-width:640px){.cards{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.hero .ben,.hero .ctas{display:none}.hero .wrap{padding-top:26px;gap:18px}.hero h1{font-size:1.85rem}.hcta .btn-line{display:none}section.blk{padding:44px 0}.facts{margin-top:16px}.ptab td:nth-child(4),.ptab th:nth-child(4){display:none}table.cmp th,table.cmp td{padding:9px 8px;font-size:.86rem}}
+@media(max-width:640px){.hero-bg{display:none}.hero:before{background:rgba(7,20,42,.86)}.cards{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.hero .ben,.hero .ctas{display:none}.hero .wrap{padding-top:26px;gap:18px}.hero h1{font-size:1.85rem}.hcta .btn-line{display:none}section.blk{padding:44px 0}.facts{margin-top:16px}.ptab td:nth-child(4),.ptab th:nth-child(4){display:none}table.cmp th,table.cmp td{padding:9px 8px;font-size:.86rem}}
 """
 
 STEPS = [("Заявка", "Вы оставляете заявку: какие трубы и что режете."), ("Уточняем задачу", "Подбираем серию, патрон и мощность лазера."),
@@ -247,13 +247,13 @@ def page_index():
             ("m-ugolok", "Резка уголка"), ("yq-2", "Перфорация профиля"), ("r219-1", "Перфорированная труба"), ("rezka-profil", "Фигурная резка")]
     faq_ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in FAQ]}
     body = f"""{header(r)}<main>
-<section class="hero" data-place="hero"><div class="wrap"><div>
+<section class="hero" data-place="hero"><video class="hero-bg" autoplay muted loop playsinline preload="auto" poster="media/v/hero-bg.jpg" aria-hidden="true"><source src="media/v/hero-bg.mp4" type="video/mp4"></video><div class="wrap"><div>
 <span class="eyebrow">Китай → Казахстан и СНГ</span>
-<h1>Лазерные станки для резки труб напрямую с завода в Китае</h1>
-<p class="sub">Круглые и профильные трубы, уголок, швеллер. Мощность 1500–3000 Вт, сталь до 6 мм. Подберём станок под ваши трубы и бюджет, проверим перед отправкой и доставим до вашего цеха.</p>
-<ul class="ben"><li>Прямые поставки от производителя</li><li>Работа по официальному договору</li><li>Проверка оборудования перед отправкой</li><li>Сопровождение закупки и логистики</li><li>Индивидуальный подбор станка</li></ul>
-<div class="ctas"><a class="btn btn-main" href="#lead">Получить расчёт стоимости</a><a class="btn btn-line" href="#series">Смотреть станки</a></div>
-</div><div id="lead" data-leadform data-ph="Например: профильная труба 40×40, стенка 2 мм, чёрная сталь" data-title="Узнайте стоимость с доставкой"></div></div></section>
+<h1>Лазерные станки для резки труб из Китая</h1>
+<p class="sub">1500–3000 Вт · трубы до ⌀219 мм · от {fm(min_kzt)} ₸</p>
+<ul class="ben"><li>Напрямую с завода, по договору</li><li>Проверка перед отправкой</li><li>Доставка до вашего цеха</li></ul>
+<div class="ctas"><a class="btn btn-main" href="#lead">Получить расчёт</a><a class="btn btn-line" href="#series">Смотреть станки</a></div>
+</div><div id="lead" data-leadform data-ph="Например: профильная труба 40×40, стенка 2 мм" data-title="Узнайте стоимость с доставкой"></div></div></section>
 <div class="wrap"><div class="facts"><div><b>6 серий</b><span>от ручного патрона до скоростных</span></div><div><b>от {fm(min_kzt)} ₸</b><span>цена на заводе в Китае</span></div><div><b>до ⌀219 мм</b><span>трубы, до 6 мм стенка</span></div><div><b>Договор</b><span>и проверка перед отправкой</span></div></div></div>
 
 <section class="blk" id="series"><div class="wrap"><span class="eyebrow" style="color:var(--logo)">Станки</span><h2>6 серий лазерных труборезов</h2>
