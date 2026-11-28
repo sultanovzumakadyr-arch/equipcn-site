@@ -7,7 +7,7 @@ import html, json, math, pathlib, datetime
 ROOT = pathlib.Path(__file__).parent
 OUT = ROOT.parent / "site" / "lazertruba"
 SITE = "https://equipcngroup.com/lazertruba"   # поменять на свой домен, когда будет куплен
-BRAND = "LazerTruba"
+BRAND = "Equipcn"
 WA_NUM = "77787586354"
 PHONE = "+7 778 758-63-54"
 CNY_PER_USD = 6.68      # ориентир ноябрь 2026
@@ -112,16 +112,16 @@ h2{font-size:clamp(1.6rem,3.4vw,2.4rem);font-weight:800;margin-bottom:10px}
 .btn-main{background:var(--accent);color:#fff}.btn-main:hover{background:#1f6fd8}.btn-line{background:#fff;color:var(--navy);border:1px solid var(--edge)}
 header.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--edge)}
 header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font:800 1.35rem var(--display)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#0B3D91;font:800 1.45rem/1.05 var(--display)}
 .logo i{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--navy),var(--navy2));display:grid;place-items:center;position:relative}
 .logo i:after{content:"";width:16px;height:16px;border:3px solid #fff;border-radius:50%}.logo i:before{content:"";position:absolute;right:5px;top:5px;width:8px;height:8px;border-radius:50%;background:var(--spark);box-shadow:0 0 8px var(--spark)}
 .logo small{display:block;font:500 .7rem var(--body);color:var(--muted);letter-spacing:.02em}
 nav.mn{display:flex;gap:22px}nav.mn a{color:var(--graphite);text-decoration:none;font-weight:500;font-size:.95rem}
 .hcta{display:flex;gap:8px}.hcta .btn{padding:10px 16px;font-size:.92rem;white-space:nowrap}
-.hero{position:relative;overflow:hidden;background:#07142a url(media/v/hero-bg.jpg) center/cover;color:#fff}.hero:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(7,20,42,.92) 0%,rgba(7,20,42,.7) 42%,rgba(7,20,42,.15) 100%)}.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}.hero .wrap{position:relative;z-index:2}
-.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;padding-top:64px;padding-bottom:84px}
+.hero{position:relative;overflow:hidden;background:radial-gradient(900px 500px at 62% 40%,rgba(255,122,26,.16),transparent 60%),radial-gradient(1100px 600px at 90% -10%,#1c437f 0,transparent 60%),linear-gradient(160deg,#081833,#0e2748);color:#fff}.hero-vid{border-radius:20px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.12)}.hero-vid video{width:100%;aspect-ratio:9/16;object-fit:cover}.hero .wrap{position:relative;z-index:2}
+.hero .wrap{display:grid;grid-template-columns:1fr 270px 400px;gap:32px;align-items:center;padding-top:56px;padding-bottom:84px}
 .eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#9cc3fa}
-.hero h1{font-size:clamp(2rem,4.4vw,3.3rem);font-weight:800;margin:14px 0}
+.hero h1{font-size:clamp(2rem,3.6vw,3rem);font-weight:800;margin:14px 0}
 .hero .sub{color:#ffb27a;font-size:1.15rem;font-weight:600;margin:0 0 20px}
 .ben{list-style:none;padding:0;margin:0 0 24px;display:grid;gap:8px}
 .ben li{position:relative;padding-left:28px}.ben li:before{content:"✓";position:absolute;left:0;top:0;width:20px;height:20px;border-radius:50%;background:var(--accent);color:#fff;font-size:.75rem;display:grid;place-items:center;font-weight:800}
@@ -169,8 +169,9 @@ table.cmp th{background:var(--navy);color:#fff;font-weight:600}table.cmp tr:last
 table.kv{width:100%;border-collapse:collapse}table.kv td{padding:8px 0;border-bottom:1px solid var(--edge)}table.kv td:first-child{color:var(--muted);width:45%}
 footer{background:var(--graphite);color:#c4cad3;padding:36px 0;margin-top:40px;font-size:.92rem}footer a{color:#fff}
 footer .fl{display:flex;flex-wrap:wrap;gap:8px 18px;margin:12px 0}
+@media(max-width:1180px){.hero .wrap{grid-template-columns:1fr 400px}.hero-vid{display:none}}
 @media(max-width:980px){nav.mn{display:none}.hero .wrap{grid-template-columns:1fr}.hero-media{display:none}.cards{grid-template-columns:1fr 1fr}.vids{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr 1fr}.lead-box,.sp{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}}
-@media(max-width:640px){.hero-bg{display:none}.hero:before{background:rgba(7,20,42,.86)}.cards{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.hero .ben,.hero .ctas{display:none}.hero .wrap{padding-top:26px;gap:18px}.hero h1{font-size:1.85rem}.hcta .btn-line{display:none}section.blk{padding:44px 0}.facts{margin-top:16px}.ptab td:nth-child(4),.ptab th:nth-child(4){display:none}table.cmp th,table.cmp td{padding:9px 8px;font-size:.86rem}}
+@media(max-width:640px){.cards{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.hero .ben,.hero .ctas{display:none}.hero .wrap{padding-top:26px;gap:18px}.hero h1{font-size:1.85rem}.hcta .btn-line{display:none}section.blk{padding:44px 0}.facts{margin-top:16px}.ptab td:nth-child(4),.ptab th:nth-child(4){display:none}table.cmp th,table.cmp td{padding:9px 8px;font-size:.86rem}}
 """
 
 STEPS = [("Заявка", "Вы оставляете заявку: какие трубы и что режете."), ("Уточняем задачу", "Подбираем серию, патрон и мощность лазера."),
@@ -206,14 +207,14 @@ def head(title, desc, canon, img, extra=""):
 
 
 def header(r):
-    return f"""<header class="top"><div class="wrap"><a class="logo" href="{r}index.html"><i></i><span>{BRAND}<small>лазерная резка труб · Equipcn</small></span></a>
+    return f"""<header class="top"><div class="wrap"><a class="logo" href="{r}index.html"><svg width="38" height="38" viewBox="0 0 48 48" aria-hidden="true"><g fill="#1F5FC9" transform="rotate(22.5 24 24)"><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(0 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(45 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(90 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(135 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(180 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(225 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(270 24 24)"/><rect x="19.5" y="3" width="9" height="9" rx="2" transform="rotate(315 24 24)"/><circle cx="24" cy="24" r="16.5"/></g><circle cx="24" cy="24" r="9.6" fill="#fff"/><path d="M19.6 24.6l3.4 3.4 6.6-7.6" fill="none" stroke="#1F5FC9" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>equipcn<small>лазерные станки для резки труб</small></span></a>
 <nav class="mn"><a href="{r}index.html#series">Станки</a><a href="{r}index.html#compare">Сравнение</a><a href="{r}index.html#video">Видео</a><a href="{r}index.html#how">Как работаем</a><a href="{r}index.html#faq">Вопросы</a></nav>
 <div class="hcta"><a class="btn btn-line" href="tel:+{WA_NUM}">{PHONE}</a><a class="btn btn-main" href="#lead">Получить расчёт</a></div></div></header>"""
 
 
 def footer(r):
     links = "".join(f'<a href="{r}seriya/{s["slug"]}.html">{e(s["name"])}</a>' for s in SERIES)
-    return f"""<footer><div class="wrap"><b style="color:#fff;font-family:var(--display);font-size:1.2rem">{BRAND}</b> — лазерные станки для резки труб с завода в Китае. Продажа и поставка: Equipcn, Алматы, ул. Жандосова, 4В · <a href="tel:+{WA_NUM}">{PHONE}</a> · Пн–Пт 10:00–18:00
+    return f"""<footer><div class="wrap"><b style="color:#fff;font-family:var(--display);font-size:1.2rem">{BRAND}</b> — лазерные станки для резки труб с завода в Китае. Алматы, ул. Жандосова, 4В · <a href="tel:+{WA_NUM}">{PHONE}</a> · Пн–Пт 10:00–18:00
 <div class="fl">{links}<a href="https://equipcngroup.com/">Всё оборудование Equipcn</a><a href="https://equipcngroup.com/privacy">Политика обработки данных</a></div>
 <div>Цены на сайте — ориентир на заводе в Китае ({RATE_NOTE}), без доставки в Казахстан и таможенных платежей. Не являются публичной офертой.</div></div></footer>
 <div class="mbar"><a class="m1" href="#lead">Получить расчёт</a><a class="m2" href="https://wa.me/{WA_NUM}" target="_blank" rel="noopener">WhatsApp</a></div>
@@ -247,13 +248,13 @@ def page_index():
             ("m-ugolok", "Резка уголка"), ("yq-2", "Перфорация профиля"), ("r219-1", "Перфорированная труба"), ("rezka-profil", "Фигурная резка")]
     faq_ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in FAQ]}
     body = f"""{header(r)}<main>
-<section class="hero" data-place="hero"><video class="hero-bg" autoplay muted loop playsinline preload="auto" poster="media/v/hero-bg.jpg" aria-hidden="true"><source src="media/v/hero-bg.mp4" type="video/mp4"></video><div class="wrap"><div>
+<section class="hero" data-place="hero"><div class="wrap"><div>
 <span class="eyebrow">Китай → Казахстан и СНГ</span>
 <h1>Лазерные станки для резки труб из Китая</h1>
-<p class="sub">1500–3000 Вт · трубы до ⌀219 мм · от {fm(min_kzt)} ₸</p>
+<p class="sub">1500–3000 Вт · трубы до ⌀219&nbsp;мм · от&nbsp;{fm(min_kzt).replace(" ","&nbsp;")}&nbsp;₸</p>
 <ul class="ben"><li>Напрямую с завода, по договору</li><li>Проверка перед отправкой</li><li>Доставка до вашего цеха</li></ul>
 <div class="ctas"><a class="btn btn-main" href="#lead">Получить расчёт</a><a class="btn btn-line" href="#series">Смотреть станки</a></div>
-</div><div id="lead" data-leadform data-ph="Например: профильная труба 40×40, стенка 2 мм" data-title="Узнайте стоимость с доставкой"></div></div></section>
+</div><div class="hero-vid"><video autoplay muted loop playsinline preload="auto" poster="media/v/hero-v.jpg"><source src="media/v/hero-v.mp4" type="video/mp4"></video></div><div id="lead" data-leadform data-ph="Например: профильная труба 40×40, стенка 2 мм" data-title="Узнайте стоимость с доставкой"></div></div></section>
 <div class="wrap"><div class="facts"><div><b>6 серий</b><span>от ручного патрона до скоростных</span></div><div><b>от {fm(min_kzt)} ₸</b><span>цена на заводе в Китае</span></div><div><b>до ⌀219 мм</b><span>трубы, до 6 мм стенка</span></div><div><b>Договор</b><span>и проверка перед отправкой</span></div></div></div>
 
 <section class="blk" id="series"><div class="wrap"><span class="eyebrow" style="color:var(--logo)">Станки</span><h2>6 серий лазерных труборезов</h2>
