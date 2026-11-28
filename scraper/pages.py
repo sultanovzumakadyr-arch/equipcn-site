@@ -92,7 +92,7 @@ def page(title, desc, canonical, body, head_extra="", image=None):
 <link rel="stylesheet" href="/assets/lead.css"><style>{CSS}</style>{head_extra}</head><body>
 <header><div class="wrap"><a class="logo" href="/">{LOGO}equipcn</a><div style="display:flex;gap:8px"><a class="btn tel hide-m" href="tel:+77787586354">{PHONE}</a><a class="btn wa" href="#lead">Получить расчёт</a></div></div></header>
 <main class="wrap">{body}</main>
-<footer><div class="wrap">© 2026 Equipcn · Промышленное оборудование из Китая под ключ · Алматы, ул. Жандосова, 4В · <a href="tel:+77787586354">{PHONE}</a> · Доставка по Казахстану и СНГ
+<footer><div class="wrap">© 2026 Equipcn · Промышленное оборудование из Китая под ключ · Алматы, ул. Жандосова, 4В · <a href="tel:+77787586354">{PHONE}</a> · <a href="tel:+77082083447">+7 708 208-34-47</a> · WhatsApp <a href="https://wa.me/8618811309532">+86 188 1130 9532</a> · <a href="mailto:zhuma675@gmail.com">zhuma675@gmail.com</a> · Доставка по Казахстану и СНГ
 <div class="dirs">{{DIRS}}</div><div class="dirs">{{LANDS}}</div><p><a href="/privacy">Политика обработки данных</a></p></div></footer>
 <div class="mbar"><a class="m1" href="#lead">Получить расчёт</a><a class="m2" href="{WA}" target="_blank" rel="noopener">WhatsApp</a></div>
 <script defer src="/assets/lead.js"></script>
