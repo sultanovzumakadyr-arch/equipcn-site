@@ -80,6 +80,7 @@ SERIES = [
          markup=None),
 ]
 POWERS = ["1500 Вт", "2000 Вт", "3000 Вт"]
+WHITE = {"m-4", "xq-1", "yq-2", "r219-1"}  # фото на белом фоне — показывать целиком
 
 
 def price(cny, markup):
@@ -132,7 +133,7 @@ section.blk{padding:64px 0}.blk .lead{color:var(--muted);max-width:760px;margin:
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:#fff;border:1px solid var(--edge);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
 .card:hover{transform:translateY(-3px);box-shadow:0 20px 40px -28px rgba(11,31,58,.5)}
-.card .ph{aspect-ratio:4/3;background:#fff;display:grid;place-items:center;overflow:hidden}.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .ph{aspect-ratio:4/3;background:#fff;position:relative;overflow:hidden}.card .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.card .ph img.wb{object-fit:contain;padding:12px}
 .card .bd{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
 .card .tg{font-size:.8rem;font-weight:700;color:var(--logo);text-transform:uppercase;letter-spacing:.04em}
 .card h3{font-size:1.3rem}.card p{margin:0;color:var(--muted);font-size:.93rem}
@@ -157,7 +158,7 @@ table.cmp th{background:var(--navy);color:#fff;font-weight:600}table.cmp tr:last
 .nf p{margin:4px 0 0;color:var(--muted)}
 .crumbs{font-size:.88rem;color:var(--muted);padding:16px 0}.crumbs a{color:var(--muted)}
 .sp{display:grid;grid-template-columns:1.05fr .95fr;gap:32px;align-items:start}
-.gal .main{background:#fff;border:1px solid var(--edge);border-radius:18px;aspect-ratio:1;display:grid;place-items:center;overflow:hidden}.gal .main img{width:100%;height:100%;object-fit:contain}
+.gal .main{background:#fff;border:1px solid var(--edge);border-radius:18px;aspect-ratio:1;position:relative;overflow:hidden}.gal .main img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
 .gal .th{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.gal .th button{border:1px solid var(--edge);border-radius:10px;padding:0;width:70px;height:70px;overflow:hidden;cursor:pointer;background:#fff}
 .gal .th button.on{outline:2px solid var(--accent)}.gal .th img{width:100%;height:100%;object-fit:cover}
 .sp h1{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:800;margin:6px 0 10px}
@@ -225,7 +226,7 @@ def vid(slug, title, r, autoplay=False):
 
 
 def card(s, r):
-    return (f'<div class="card"><a class="ph" href="{r}seriya/{s["slug"]}.html"><img loading="lazy" src="{r}media/p/{s["img"]}.webp" alt="{e(s["name"])} — лазерный станок для резки труб"></a>'
+    return (f'<div class="card"><a class="ph" href="{r}seriya/{s["slug"]}.html"><img loading="lazy"{' class="wb"' if s["img"] in WHITE else ''} src="{r}media/p/{s["img"]}-c.webp" alt="{e(s["name"])} — лазерный станок для резки труб"></a>'
             f'<div class="bd"><span class="tg">{e(s["tag"])}</span><h3><a href="{r}seriya/{s["slug"]}.html" style="color:inherit;text-decoration:none">{e(s["name"])}</a></h3><p>{e(s["lead"])}</p>'
             f'<div class="pr"><small>от </small>{fm(s["from_kzt"])} ₸ <small>≈ ${fm(s["from_usd"])}</small></div>'
             f'<div class="bt"><a class="btn btn-line" href="{r}seriya/{s["slug"]}.html">Подробнее</a><a class="btn btn-main" href="#lead" data-ask="{e(s["name"])} — лазерный станок для резки труб">Узнать стоимость</a></div></div></div>')
@@ -286,7 +287,7 @@ def page_index():
 
 def page_series(s):
     r = "../"
-    th = "".join(f'<button type="button" data-src="{r}media/p/{p}.webp"{" class=on" if i == 0 else ""}><img loading="lazy" src="{r}media/p/{p}.webp" alt=""></button>' for i, p in enumerate(s["photos"]))
+    th = "".join(f'<button type="button" data-src="{r}media/p/{p}-c.webp"{" class=on" if i == 0 else ""}><img loading="lazy" src="{r}media/p/{p}-c.webp" alt=""></button>' for i, p in enumerate(s["photos"]))
     rows = "".join(f'<tr><td>{e(c)}<br><small>{e(rng)}</small></td><td>{p}</td><td><b>{fm(kzt)} ₸</b><br><small>≈ ${fm(usd)}</small></td>'
                    f'<td><a class="btn btn-main" style="padding:8px 12px;font-size:.85rem" href="#lead" data-ask="{e(s["name"])}, {e(c)}, {p}">Узнать стоимость</a></td></tr>'
                    for c, rng, p, usd, kzt in s["rows"])
@@ -296,7 +297,7 @@ def page_series(s):
                "offers": {"@type": "AggregateOffer", "priceCurrency": "KZT", "lowPrice": s["from_kzt"], "highPrice": max(x[4] for x in s["rows"]), "offerCount": len(s["rows"]), "availability": "https://schema.org/PreOrder"}}
     body = f"""{header(r)}<main class="wrap" data-view-item="{s['slug']}" data-name="{e(s['name'])}" data-cat="Лазерные труборезы">
 <div class="crumbs"><a href="{r}index.html">Главная</a> / <a href="{r}index.html#series">Станки</a> / {e(s['name'])}</div>
-<div class="sp"><div class="gal"><div class="main"><img id="mi" src="{r}media/p/{s['photos'][0]}.webp" alt="{e(s['name'])} — лазерный станок для резки труб"></div><div class="th">{th}</div></div>
+<div class="sp"><div class="gal"><div class="main"><img id="mi" src="{r}media/p/{s['photos'][0]}-c.webp" alt="{e(s['name'])} — лазерный станок для резки труб"></div><div class="th">{th}</div></div>
 <div><span class="eyebrow" style="color:var(--logo)">{e(s['tag'])}</span><h1>{e(s['name'])} — лазерный станок для резки труб</h1><p>{e(s['lead'])}</p>
 <div class="price"><small>от </small>{fm(s['from_kzt'])} ₸ <small>≈ ${fm(s['from_usd'])}</small></div>
 <p class="note">Цена на заводе в Китае с экспортной упаковкой, без доставки в Казахстан и таможенных платежей. Реальную стоимость доставки уточнит менеджер.</p>
